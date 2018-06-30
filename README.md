@@ -1,2 +1,2 @@
 # Abstractum.io
-[Abstractum.io](https://abstractum.io)
+[Abstractum.io](abstractum.io)
