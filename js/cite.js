@@ -101,8 +101,8 @@ function draw() {
     normalMaterial();
     push();
     rotateZ(frameCount * 0.001);
-    rotateX(frameCount * 0.01);
-    rotateY(frameCount * 0.01);
-    box(100+ abs((1 * sin(frameCount *0.01))),50);
+    rotateX(frameCount * 0.02);
+    rotateY(frameCount * 0.009);
+    box(100+ abs((4 * sin(frameCount *0.04))),50 + abs((10 * cos(frameCount *0.01))));
     pop();
 }
