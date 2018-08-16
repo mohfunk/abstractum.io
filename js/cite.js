@@ -25,6 +25,7 @@ function windowResized() {
 
 function setLogo() {
     logo = createA('http://abstractum.io/', 'Abstractum');
+    logo.class('animated slideInDown');
     logo.style('text-decoration', 'none');
     logo.style('border-style', 'none');
     logo.style('font-size', '20px');
@@ -39,6 +40,7 @@ function setPages() {
     bar_y = 0.05*height + 5;
     bar_p = width/8;
     abstraction = createA('https://monupon.studio', 'Abstraction');
+    abstraction.class('animated slideInLeft');
     abstraction.style('text-decoration', 'none');
     abstraction.style('border-style', 'none');
     abstraction.style('font-size', '14px');
@@ -47,6 +49,7 @@ function setPages() {
     abstraction.position(width/2 - bar_p*2 - abstraction.width/2 , bar_y);
 
     mohra = createA('https://monupon.studio', 'Mohra');
+    mohra.class('animated slideInLeft');
     mohra.style('text-decoration', 'none');
     mohra.style('border-style', 'none');
     mohra.style('font-size', '14px');
@@ -55,6 +58,7 @@ function setPages() {
     mohra.position(width/2 - bar_p - mohra.width/2 , bar_y);
 
     blog = createA('https://monupon.studio', 'Blog');
+    blog.class('animated slideInRight');
     blog.style('text-decoration', 'none');
     blog.style('border-style', 'none');
     blog.style('font-size', '14px');
@@ -63,6 +67,7 @@ function setPages() {
     blog.position(width/2 + bar_p - blog.width/2 , bar_y);
 
     about = createA('https://monupon.studio', 'About');
+    about.class('animated slideInRight');
     about.style('text-decoration', 'none');
     about.style('border-style', 'none');
     about.style('font-size', '14px');
@@ -74,6 +79,7 @@ function setPages() {
 
 function setCopyright() {
     copyright = createP('© 2018 Mohammed Fahad. All rights reserved. <br> Waterloo, Ontario CA. </br>');
+    copyright.class('animated slideInUp');
     copyright.position(width/2, 0.90*height);
     copyright.style('text-decoration', 'none');
     copyright.style('border-style', 'none');
