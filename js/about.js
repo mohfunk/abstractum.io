@@ -25,7 +25,6 @@ function windowResized() {
 
 function setLogo() {
     logo = createA('http://abstractum.io/', 'Abstractum');
-    logo.class('animated slideInDown');
     logo.style('text-decoration', 'none');
     logo.style('border-style', 'none');
     logo.style('font-size', '20px');
@@ -39,8 +38,7 @@ function setLogo() {
 function setPages() {
     bar_y = 0.05*height + 5;
     bar_p = width/8;
-    abstraction = createA('https://abstractum.io/abstraction', 'Abstraction');
-    abstraction.class('animated slideInLeft');
+    abstraction = createA('https://monupon.studio', 'Abstraction');
     abstraction.style('text-decoration', 'none');
     abstraction.style('border-style', 'none');
     abstraction.style('font-size', '14px');
@@ -48,8 +46,7 @@ function setPages() {
     abstraction.style('color', '#FFFFFF');
     abstraction.position(width/2 - bar_p*2 - abstraction.width/2 , bar_y);
 
-    mohra = createA('https://abstractum.io/blog', 'Mohra');
-    mohra.class('animated slideInLeft');
+    mohra = createA('https://monupon.studio', 'Mohra');
     mohra.style('text-decoration', 'none');
     mohra.style('border-style', 'none');
     mohra.style('font-size', '14px');
@@ -57,8 +54,7 @@ function setPages() {
     mohra.style('color', '#FFFFFF');
     mohra.position(width/2 - bar_p - mohra.width/2 , bar_y);
 
-    blog = createA('https://abstractum.io/blog', 'Blog');
-    blog.class('animated slideInRight');
+    blog = createA('https://monupon.studio', 'Blog');
     blog.style('text-decoration', 'none');
     blog.style('border-style', 'none');
     blog.style('font-size', '14px');
@@ -66,20 +62,20 @@ function setPages() {
     blog.style('color', '#FFFFFF');
     blog.position(width/2 + bar_p - blog.width/2 , bar_y);
 
-    about = createA('https://abstractum.io/about', 'About');
-    about.class('animated slideInRight');
+    about = createA('https://monupon.studio', 'About');
     about.style('text-decoration', 'none');
     about.style('border-style', 'none');
     about.style('font-size', '14px');
     about.style('font-family', 'Futura');
     about.style('color', '#FFFFFF');
+    about.style('transform', 'scale 0.7s ease-in-out 0s');
+    about.style('transform', 'scale(1.3,1.3)');
     about.position(width/2 + bar_p*2 - about.width/2 , bar_y);
 
 }
 
 function setCopyright() {
     copyright = createP('© 2018 Mohammed Fahad. All rights reserved. <br> Waterloo, Ontario CA. </br>');
-    copyright.class('animated slideInUp');
     copyright.position(width/2, 0.90*height);
     copyright.style('text-decoration', 'none');
     copyright.style('border-style', 'none');
