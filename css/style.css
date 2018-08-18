@@ -22,3 +22,26 @@ html, body {
 
 }
 
+a.pg, a.logo, p.cp {
+    
+    text-decoration: none;
+    border-style: none;
+    font-family: Futura;
+
+}
+
+a.pg, a.logo {
+    color: #FFFFFF
+}
+
+a.pg, p.cp {
+    font-size: 14px;
+}
+a.logo {
+    font-size: 20px;
+    
+}
+p.cp {
+    color: #333333;
+    text-align: center;
+}

@@ -10,6 +10,7 @@ var bar_y;
 var bar_p;
 
 
+
 function windowResized() {
     logo.remove();
     copyright.remove();
@@ -25,69 +26,179 @@ function windowResized() {
 
 function setLogo() {
     logo = createA('http://abstractum.io/', 'Abstractum');
-    logo.class('animated slideInDown');
-    logo.style('text-decoration', 'none');
-    logo.style('border-style', 'none');
-    logo.style('font-size', '20px');
-    logo.style('font-family', 'Futura');
-    logo.style('align', 'centre');
-    logo.style('color', '#FFFFFF');
+    logo.id('lg');
+    logo.class('logo');
     logo.position(width/2, 0.05*height);
     logo.center('horizontal');
+    var ani_logo = anime({
+            targets: 'a#lg.logo', 
+            translateY: {
+                value: [-100, 0],
+                easing: 'easeOutExpo',
+                duration: 2500
+            }
+
+        });
+    logo.mouseOver(function() {
+        anime({
+            targets: 'a#lg.logo', 
+            scale: 1.3,
+            duration: 500
+
+        });
+    });
+    logo.mouseOut(function() {
+        anime({
+            targets: 'a#lg.logo', 
+            scale: 1,
+            delay: 500,
+            duration: 500
+        });
+    });
+
 
 }
 function setPages() {
     bar_y = 0.05*height + 5;
     bar_p = width/8;
-    abstraction = createA('https://abstractum.io/abstraction', 'Abstraction');
-    abstraction.class('animated slideInLeft');
-    abstraction.style('text-decoration', 'none');
-    abstraction.style('border-style', 'none');
-    abstraction.style('font-size', '14px');
-    abstraction.style('font-family', 'Futura');
-    abstraction.style('color', '#FFFFFF');
+    abstraction = createA('https://abstractum.io/abstraction', 'abstraction');
+    abstraction.id('abst');
+    abstraction.class('pg');
     abstraction.position(width/2 - bar_p*2 - abstraction.width/2 , bar_y);
+    var ani_abs = anime({
+            targets: 'a#abst', 
+            translateX: {
+                value: [-100, 0],
+                easing: 'easeOutExpo',
+                duration: 2000
+            }
 
-    mohra = createA('https://abstractum.io/blog', 'Mohra');
-    mohra.class('animated slideInLeft');
-    mohra.style('text-decoration', 'none');
-    mohra.style('border-style', 'none');
-    mohra.style('font-size', '14px');
-    mohra.style('font-family', 'Futura');
-    mohra.style('color', '#FFFFFF');
+        });
+    abstraction.mouseOver(function() {
+        anime({
+            targets: 'a#abst.pg', 
+            scale: 1.3,
+            duration: 500
+
+        });
+    });
+    abstraction.mouseOut(function() {
+        anime({
+            targets: 'a#abst.pg', 
+            scale: 1,
+            delay: 500,
+            duration: 500
+        });
+    });
+
+    mohra = createA('https://abstractum.io/mohra', 'Mohra');
+    mohra.id('mohra');
+    mohra.class('pg');
     mohra.position(width/2 - bar_p - mohra.width/2 , bar_y);
+    var ani_moh = anime({
+            targets: 'a#mohra.pg', 
+            translateX: {
+                value: [-100, 0],
+                easing: 'easeOutExpo',
+                duration: 2000
+            }
+
+        });
+    mohra.mouseOver(function() {
+        anime({
+            targets: 'a#mohra.pg', 
+            scale: 1.3,
+            duration: 500
+
+        });
+    });
+    mohra.mouseOut(function() {
+        anime({
+            targets: 'a#mohra.pg', 
+            scale: 1,
+            delay: 500,
+            duration: 500
+        });
+    });
 
     blog = createA('https://abstractum.io/blog', 'Blog');
-    blog.class('animated slideInRight');
-    blog.style('text-decoration', 'none');
-    blog.style('border-style', 'none');
-    blog.style('font-size', '14px');
-    blog.style('font-family', 'Futura');
-    blog.style('color', '#FFFFFF');
+    blog.id('blog');
+    blog.class('pg');
     blog.position(width/2 + bar_p - blog.width/2 , bar_y);
+    var ani_blog = anime({
+            targets: 'a#blog.pg', 
+            translateX: {
+                value: [100, 0],
+                easing: 'easeOutExpo',
+                duration: 2000
+            }
 
+        });
+    blog.mouseOver(function() {
+        anime({
+            targets: 'a#blog.pg', 
+            scale: 1.3,
+            duration: 500
+
+        });
+    });
+    blog.mouseOut(function() {
+        anime({
+            targets: 'a#blog.pg', 
+            scale: 1,
+            delay: 500,
+            duration: 500
+        });
+    });
+    
     about = createA('https://abstractum.io/about', 'About');
-    about.class('animated slideInRight');
-    about.style('text-decoration', 'none');
-    about.style('border-style', 'none');
-    about.style('font-size', '14px');
-    about.style('font-family', 'Futura');
-    about.style('color', '#FFFFFF');
+    about.id('about');
+    about.class('pg');
     about.position(width/2 + bar_p*2 - about.width/2 , bar_y);
+    var ani_about = anime({
+            targets: 'a#about.pg', 
+            translateX: {
+                value: [100, 0],
+                easing: 'easeOutExpo',
+                duration: 2000
+            }
+
+        });
+    about.mouseOver(function() {
+        anime({
+            targets: 'a#about.pg', 
+            scale: 1.3,
+            duration: 500
+
+        });
+    });
+    about.mouseOut(function() {
+        anime({
+            targets: 'a#about.pg', 
+            scale: 1,
+            delay: 500,
+            duration: 500
+        });
+    });
 
 }
 
 function setCopyright() {
     copyright = createP('© 2018 Mohammed Fahad. All rights reserved. <br> Waterloo, Ontario CA. </br>');
-    copyright.class('animated slideInUp');
+    copyright.id('copyr');
+    copyright.class('cp');
     copyright.position(width/2, 0.90*height);
-    copyright.style('text-decoration', 'none');
-    copyright.style('border-style', 'none');
-    copyright.style('font-size', '12px');
-    copyright.style('font-family', 'Futura');
-    copyright.style('text-align', 'centre');
-    copyright.style('color', '#333333');
     copyright.center('horizontal');
+    var ani_cp = anime({
+            targets: 'p#copyr.cp', 
+            translateY: {
+                value: [100, 0],
+                easing: 'easeOutExpo',
+                duration: 2500
+            }
+
+        });
+
 }
 
 
