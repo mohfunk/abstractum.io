@@ -43,7 +43,7 @@ function setLogo() {
         anime({
             targets: 'a#lg.logo', 
             scale: 1.3,
-            duration: 500
+            duration: 1500
 
         });
     });
@@ -52,7 +52,7 @@ function setLogo() {
             targets: 'a#lg.logo', 
             scale: 1,
             delay: 500,
-            duration: 500
+            duration: 1500
         });
     });
 
@@ -78,7 +78,7 @@ function setPages() {
         anime({
             targets: 'a#abst.pg', 
             scale: 1.3,
-            duration: 500
+            duration: 1500
 
         });
     });
@@ -87,7 +87,8 @@ function setPages() {
             targets: 'a#abst.pg', 
             scale: 1,
             delay: 500,
-            duration: 500
+            color: 'rgb(255, 255, 255)',
+            duration: 1500
         });
     });
 
@@ -108,7 +109,7 @@ function setPages() {
         anime({
             targets: 'a#mohra.pg', 
             scale: 1.3,
-            duration: 500
+            duration: 1500
 
         });
     });
@@ -117,7 +118,7 @@ function setPages() {
             targets: 'a#mohra.pg', 
             scale: 1,
             delay: 500,
-            duration: 500
+            duration: 1500
         });
     });
 
@@ -138,7 +139,7 @@ function setPages() {
         anime({
             targets: 'a#blog.pg', 
             scale: 1.3,
-            duration: 500
+            duration: 1500
 
         });
     });
@@ -147,7 +148,7 @@ function setPages() {
             targets: 'a#blog.pg', 
             scale: 1,
             delay: 500,
-            duration: 500
+            duration: 1500
         });
     });
     
@@ -168,7 +169,7 @@ function setPages() {
         anime({
             targets: 'a#about.pg', 
             scale: 1.3,
-            duration: 500
+            duration: 1500
 
         });
     });
@@ -177,7 +178,7 @@ function setPages() {
             targets: 'a#about.pg', 
             scale: 1,
             delay: 500,
-            duration: 500
+            duration: 1500
         });
     });
 
