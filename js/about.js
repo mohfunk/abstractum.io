@@ -32,8 +32,8 @@ function setLogo() {
     logo.center('horizontal');
     var ani_logo = anime({
             targets: 'a#lg.logo', 
-            translateY: {
-                value: [-100, 0],
+            translateX: {
+                value: [0, -250],
                 easing: 'easeOutExpo',
                 duration: 2500
             }
@@ -68,7 +68,7 @@ function setPages() {
     var ani_abs = anime({
             targets: 'a#abst', 
             translateX: {
-                value: [-100, 0],
+                value: [0, -250],
                 easing: 'easeOutExpo',
                 duration: 2000
             }
@@ -99,7 +99,7 @@ function setPages() {
     var ani_moh = anime({
             targets: 'a#mohra.pg', 
             translateX: {
-                value: [-100, 0],
+                value: [0, -250],
                 easing: 'easeOutExpo',
                 duration: 2000
             }
@@ -129,7 +129,7 @@ function setPages() {
     var ani_blog = anime({
             targets: 'a#blog.pg', 
             translateX: {
-                value: [100, 0],
+                value: [0, -250],
                 easing: 'easeOutExpo',
                 duration: 2000
             }
@@ -158,8 +158,9 @@ function setPages() {
     about.position(width/2 + bar_p*2 - about.width/2 , bar_y);
     var ani_about = anime({
             targets: 'a#about.pg', 
+            scale: 1.5,
             translateX: {
-                value: [100, 0],
+                value: [0, (-bar_p*2)/1.5],
                 easing: 'easeOutExpo',
                 duration: 2000
             }
@@ -190,15 +191,6 @@ function setCopyright() {
     copyright.class('cp');
     copyright.position(width/2, 0.90*height);
     copyright.center('horizontal');
-    var ani_cp = anime({
-            targets: 'p#copyr.cp', 
-            translateY: {
-                value: [100, 0],
-                easing: 'easeOutExpo',
-                duration: 2500
-            }
-
-        });
 
 }
 
