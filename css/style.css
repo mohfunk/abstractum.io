@@ -35,13 +35,8 @@ button.pg, button.logo {
     background: transparent;
 }
 
-button.pg, p.cp {
-    font-size: 14px;
-}
-button.logo {
-    font-size: 20px;
-    
-}
+
+
 p.cp {
     color: #333333;
     text-align: center;

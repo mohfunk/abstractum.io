@@ -8,6 +8,7 @@ var blog;
 // Variables
 var bar_y;
 var bar_p;
+var box_x, box_y;
 
 
 // Animations
@@ -121,7 +122,13 @@ function setLogo() {
     logo = createButton('Abstractum');
     logo.id('lg');
     logo.class('logo');
-    logo.position(width/2, 0.05*height);
+    if(width >= 880) {
+        logo.style('font-size', '20px');
+    } else {
+        logo.style('font-size', '14px');
+
+    }
+    logo.position(width/2 - logo.width/2, 0.05*height);
     logo.center('horizontal');
     var ani_entry = anime({
         targets: 'button#lg.logo',
@@ -135,20 +142,36 @@ function setLogo() {
 
 }
 function setPages() {
-    bar_y = 0.05*height + 5;
+    bar_y = 0.05*height;
     bar_p = width/8;
     abstraction = createButton('abstraction');
     abstraction.id('abst');
     abstraction.class('pg');
-    abstraction.position(width/2 - bar_p*2 - abstraction.width/2 , bar_y);
+    if(width >= 880) {
+        abstraction.style('font-size', '14px');
+        abstraction.position(width/2 - bar_p*2 - abstraction.width/2 , bar_y);
+        var abst_entry = anime({
+            targets: 'button#abst.pg',
+            translateX: [-100,0],
+            duration: 3000,
+            elasticity: 400
+        });
+
+    } else {
+        abstraction.style('font-size', '8px');
+        abstraction.position(width/2 - abstraction.width/3, bar_y*2.5);
+        var abst_entry = anime({
+            targets: 'button#abst.pg',
+            translateX: [-100,0],
+            duration: 3000,
+            elasticity: 400
+        });
+
+
+    }
+
     abstraction.mouseOver(abstButtonEnt);
     abstraction.mouseOut(abstButtonExt);
-    var abst_entry = anime({
-        targets: 'button#abst.pg',
-        translateX: [-100,0],
-        duration: 3000,
-        elasticity: 400
-    });
 
 
 
@@ -156,48 +179,100 @@ function setPages() {
     mohra = createButton('Mohra');
     mohra.id('mohra');
     mohra.class('pg');
-    mohra.position(width/2 - bar_p - mohra.width/2 , bar_y);
+    if(width >= 880) {
+        mohra.style('font-size', '14px');
+        mohra.position(width/2 - bar_p - mohra.width/2 , bar_y);
+        var mohra_entry = anime({
+            targets: 'button#mohra.pg',
+            translateX: [-100,0],
+            duration: 3000,
+            elasticity: 400
+        });
+
+    } else {
+        mohra.style('font-size', '8px');
+        mohra.position(width/2 - mohra.width/3, bar_y*3.5);
+
+        var mohra_entry = anime({
+            targets: 'button#mohra.pg',
+            translateX: [100,0],
+            duration: 3000,
+            elasticity: 400
+        });
+
+    }
+
     mohra.mouseOver(mohButtonEnt);
     mohra.mouseOut(mohButtonExt);
-    var mohra_entry = anime({
-        targets: 'button#mohra.pg',
-        translateX: [-100,0],
-        duration: 3000,
-        elasticity: 400
-    });
 
 
     blog = createButton('Blog');
     blog.id('blog');
     blog.class('pg');
-    blog.position(width/2 + bar_p - blog.width/2 , bar_y);
+    if(width >= 880) {
+        blog.style('font-size', '14px');
+        blog.position(width/2 + bar_p - blog.width/2 , bar_y);
+        var blog_entry = anime({
+            targets: 'button#blog.pg',
+            translateX: [100,0],
+            duration: 3000,
+            elasticity: 400
+        });
+
+    } else {
+        blog.style('font-size', '8px');
+        blog.position(width/2 - blog.width/3 , bar_y*4.5);
+        var blog_entry = anime({
+            targets: 'button#blog.pg',
+            translateX: [-100,0],
+            duration: 3000,
+            elasticity: 400
+        });
+
+    }
+
     blog.mouseOver(blgButtonEnt);
     blog.mouseOut(blgButtonExt);
-    var blog_entry = anime({
-        targets: 'button#blog.pg',
-        translateX: [100,0],
-        duration: 3000,
-        elasticity: 400
-    });
 
     about = createButton('About');
     about.id('about');
     about.class('pg');
-    about.position(width/2 + bar_p*2 - about.width/2 , bar_y);
+    if(width >= 880) {
+        about.style('font-size', '14px');
+        about.position(width/2 + bar_p*2 - about.width/2 , bar_y);
+        var abt_entry = anime({
+            targets: 'button#about.pg',
+            translateX: [100,0],
+            duration: 3000,
+            elasticity: 400
+        });
+
+    } else {
+        about.style('font-size', '8px');
+        about.position(width/2 - about.width/3 , bar_y*5.5);
+        var abt_entry = anime({
+            targets: 'button#about.pg',
+            translateX: [100,0],
+            duration: 3000,
+            elasticity: 400
+        });
+
+    }
+
     about.mouseOver(abtButtonEnt);
     about.mouseOut(abtButtonExt);
-    var abt_entry = anime({
-        targets: 'button#about.pg',
-        translateX: [100,0],
-        duration: 3000,
-        elasticity: 400
-    });
 
 }
 function setCopyright() {
     copyright = createP('© 2018 Mohammed Fahad. All rights reserved. <br> Waterloo, Ontario CA. </br>');
     copyright.id('copyr');
     copyright.class('cp');
+    if(width >= 880) {
+        copyright.style('font-size', '14px');
+
+    } else {
+        copyright.style('font-size', '8px');
+    }
     copyright.position(width/2, 0.90*height);
     copyright.center('horizontal');
     var ani_entry = anime({
@@ -213,6 +288,13 @@ function setCopyright() {
 function setup() {
     createCanvas(windowWidth, windowHeight, WEBGL);
     background(0);
+    if(width >= 880) {
+        box_x = 30;
+        box_y = 70;
+    } else {
+        box_x = 15;
+        box_y = 35;
+    }
     setLogo();
     setPages();
     setCopyright();
@@ -229,6 +311,6 @@ function draw() {
     rotateZ(frameCount * 0.001);
     rotateX(frameCount * 0.02);
     rotateY(frameCount * 0.009);
-    box(30+ abs((10 * sin(frameCount *0.02))),70 + abs((10 * cos(frameCount *0.01))));
+    box(box_x+ abs((10 * sin(frameCount *0.02))),box_y + abs((10 * cos(frameCount *0.01))));
     pop();
 }
