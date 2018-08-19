@@ -10,7 +10,100 @@ var bar_y;
 var bar_p;
 
 
+// Animations
+function logoButtonEnt() {
+    anime.remove('button#lg.logo');
+    anime({
+        targets: 'button#lg.logo',
+        scale: 1.3,
+        duration: 3000,
+        elasticity: 400
+    });
+}
+function logoButtonExt() {
+    anime.remove('button#lg.logo');
+    anime({
+        targets: 'button#lg.logo',
+        scale: 1,
+        duration: 3000,
+        elasticity: 400
+    });
+}
 
+function abstButtonEnt() {
+    anime.remove('button#abst.pg');
+    anime({
+        targets: 'button#abst.pg',
+        scale: 1.3,
+        duration: 3000,
+        elasticity: 400
+    });
+}
+function abstButtonExt() {
+    anime.remove('button#abst.pg');
+    anime({
+        targets: 'button#abst.pg',
+        scale: 1,
+        duration: 3000,
+        elasticity: 400
+    });
+}
+
+function mohButtonEnt() {
+    anime.remove('button#mohra.pg');
+    anime({
+        targets: 'button#mohra.pg',
+        scale: 1.3,
+        duration: 3000,
+        elasticity: 400
+    });
+}
+function mohButtonExt() {
+    anime.remove('button#mohra.pg');
+    anime({
+        targets: 'button#mohra.pg',
+        scale: 1,
+        duration: 3000,
+        elasticity: 400
+    });
+}
+
+function blgButtonEnt() {
+    anime.remove('button#blog.pg');
+    anime({
+        targets: 'button#blog.pg',
+        scale: 1.3,
+        duration: 3000,
+        elasticity: 400
+    });
+}
+function blgButtonExt() {
+    anime.remove('button#blog.pg');
+    anime({
+        targets: 'button#blog.pg',
+        scale: 1,
+        duration: 3000,
+        elasticity: 400
+    });
+}
+function abtButtonEnt() {
+    anime.remove('button#about.pg');
+    anime({
+        targets: 'button#about.pg',
+        scale: 1.3,
+        duration: 3000,
+        elasticity: 400
+    });
+}
+function abtButtonExt() {
+    anime.remove('button#about.pg');
+    anime({
+        targets: 'button#about.pg',
+        scale: 1,
+        duration: 3000,
+        elasticity: 400
+    });
+}
 function windowResized() {
     logo.remove();
     copyright.remove();
@@ -25,180 +118,94 @@ function windowResized() {
 }
 
 function setLogo() {
-    logo = createA('http://abstractum.io/', 'Abstractum');
+    logo = createButton('Abstractum');
     logo.id('lg');
     logo.class('logo');
     logo.position(width/2, 0.05*height);
     logo.center('horizontal');
-    var ani_logo = anime({
-            targets: 'a#lg.logo', 
-            translateY: {
-                value: [-100, 0],
-                easing: 'easeOutExpo',
-                duration: 2500
-            }
-
-        });
-    logo.mouseOver(function() {
-        anime({
-            targets: 'a#lg.logo', 
-            scale: 1.3,
-            duration: 1500
-
-        });
+    var ani_entry = anime({
+        targets: 'button#lg.logo',
+        translateY: [-100,0],
+        duration: 3000,
+        elasticity: 400
     });
-    logo.mouseOut(function() {
-        anime({
-            targets: 'a#lg.logo', 
-            scale: 1,
-            delay: 500,
-            duration: 1500
-        });
-    });
+    logo.mouseOver(logoButtonEnt);
+    logo.mouseOut(logoButtonExt);
 
 
 }
 function setPages() {
     bar_y = 0.05*height + 5;
     bar_p = width/8;
-    abstraction = createA('https://abstractum.io/abstraction', 'abstraction');
+    abstraction = createButton('abstraction');
     abstraction.id('abst');
     abstraction.class('pg');
     abstraction.position(width/2 - bar_p*2 - abstraction.width/2 , bar_y);
-    var ani_abs = anime({
-            targets: 'a#abst', 
-            translateX: {
-                value: [-100, 0],
-                easing: 'easeOutExpo',
-                duration: 2000
-            }
-
-        });
-    abstraction.mouseOver(function() {
-        anime({
-            targets: 'a#abst.pg', 
-            scale: 1.3,
-            duration: 1500
-
-        });
-    });
-    abstraction.mouseOut(function() {
-        anime({
-            targets: 'a#abst.pg', 
-            scale: 1,
-            delay: 500,
-            color: 'rgb(255, 255, 255)',
-            duration: 1500
-        });
+    abstraction.mouseOver(abstButtonEnt);
+    abstraction.mouseOut(abstButtonExt);
+    var abst_entry = anime({
+        targets: 'button#abst.pg',
+        translateX: [-100,0],
+        duration: 3000,
+        elasticity: 400
     });
 
-    mohra = createA('https://abstractum.io/mohra', 'Mohra');
+
+
+
+    mohra = createButton('Mohra');
     mohra.id('mohra');
     mohra.class('pg');
     mohra.position(width/2 - bar_p - mohra.width/2 , bar_y);
-    var ani_moh = anime({
-            targets: 'a#mohra.pg', 
-            translateX: {
-                value: [-100, 0],
-                easing: 'easeOutExpo',
-                duration: 2000
-            }
-
-        });
-    mohra.mouseOver(function() {
-        anime({
-            targets: 'a#mohra.pg', 
-            scale: 1.3,
-            duration: 1500
-
-        });
-    });
-    mohra.mouseOut(function() {
-        anime({
-            targets: 'a#mohra.pg', 
-            scale: 1,
-            delay: 500,
-            duration: 1500
-        });
+    mohra.mouseOver(mohButtonEnt);
+    mohra.mouseOut(mohButtonExt);
+    var mohra_entry = anime({
+        targets: 'button#mohra.pg',
+        translateX: [-100,0],
+        duration: 3000,
+        elasticity: 400
     });
 
-    blog = createA('https://abstractum.io/blog', 'Blog');
+
+    blog = createButton('Blog');
     blog.id('blog');
     blog.class('pg');
     blog.position(width/2 + bar_p - blog.width/2 , bar_y);
-    var ani_blog = anime({
-            targets: 'a#blog.pg', 
-            translateX: {
-                value: [100, 0],
-                easing: 'easeOutExpo',
-                duration: 2000
-            }
-
-        });
-    blog.mouseOver(function() {
-        anime({
-            targets: 'a#blog.pg', 
-            scale: 1.3,
-            duration: 1500
-
-        });
+    blog.mouseOver(blgButtonEnt);
+    blog.mouseOut(blgButtonExt);
+    var blog_entry = anime({
+        targets: 'button#blog.pg',
+        translateX: [100,0],
+        duration: 3000,
+        elasticity: 400
     });
-    blog.mouseOut(function() {
-        anime({
-            targets: 'a#blog.pg', 
-            scale: 1,
-            delay: 500,
-            duration: 1500
-        });
-    });
-    
-    about = createA('https://abstractum.io/about', 'About');
+
+    about = createButton('About');
     about.id('about');
     about.class('pg');
     about.position(width/2 + bar_p*2 - about.width/2 , bar_y);
-    var ani_about = anime({
-            targets: 'a#about.pg', 
-            translateX: {
-                value: [100, 0],
-                easing: 'easeOutExpo',
-                duration: 2000
-            }
-
-        });
-    about.mouseOver(function() {
-        anime({
-            targets: 'a#about.pg', 
-            scale: 1.3,
-            duration: 1500
-
-        });
-    });
-    about.mouseOut(function() {
-        anime({
-            targets: 'a#about.pg', 
-            scale: 1,
-            delay: 500,
-            duration: 1500
-        });
+    about.mouseOver(abtButtonEnt);
+    about.mouseOut(abtButtonExt);
+    var abt_entry = anime({
+        targets: 'button#about.pg',
+        translateX: [100,0],
+        duration: 3000,
+        elasticity: 400
     });
 
 }
-
 function setCopyright() {
     copyright = createP('© 2018 Mohammed Fahad. All rights reserved. <br> Waterloo, Ontario CA. </br>');
     copyright.id('copyr');
     copyright.class('cp');
     copyright.position(width/2, 0.90*height);
     copyright.center('horizontal');
-    var ani_cp = anime({
-            targets: 'p#copyr.cp', 
-            translateY: {
-                value: [100, 0],
-                easing: 'easeOutExpo',
-                duration: 2500
-            }
-
-        });
+    var ani_entry = anime({
+        targets: 'p#copyr.cp',
+        translateY: [100,0],
+        duration: 3000,
+        elasticity: 400
+    });
 
 }
 
@@ -209,11 +216,12 @@ function setup() {
     setLogo();
     setPages();
     setCopyright();
+
+
 }
 
 function draw() {
     background(0);
-
     noStroke();
     fill(190);
     normalMaterial();

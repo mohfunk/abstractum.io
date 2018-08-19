@@ -22,7 +22,7 @@ html, body {
 
 }
 
-a.pg, a.logo, p.cp {
+button.pg, button.logo, p.cp {
     
     text-decoration: none;
     border-style: none;
@@ -30,14 +30,15 @@ a.pg, a.logo, p.cp {
 
 }
 
-a.pg, a.logo {
-    color: #FFFFFF
+button.pg, button.logo {
+    color: #FFFFFF;
+    background: transparent;
 }
 
-a.pg, p.cp {
+button.pg, p.cp {
     font-size: 14px;
 }
-a.logo {
+button.logo {
     font-size: 20px;
     
 }
@@ -45,3 +46,4 @@ p.cp {
     color: #333333;
     text-align: center;
 }
+
