@@ -11,100 +11,7 @@ var bar_p;
 var box_x, box_y;
 
 
-// Animations
-function logoButtonEnt() {
-    anime.remove('button#lg.logo');
-    anime({
-        targets: 'button#lg.logo',
-        scale: 1.3,
-        duration: 3000,
-        elasticity: 400
-    });
-}
-function logoButtonExt() {
-    anime.remove('button#lg.logo');
-    anime({
-        targets: 'button#lg.logo',
-        scale: 1,
-        duration: 3000,
-        elasticity: 400
-    });
-}
 
-function abstButtonEnt() {
-    anime.remove('button#abst.pg');
-    anime({
-        targets: 'button#abst.pg',
-        scale: 1.3,
-        duration: 3000,
-        elasticity: 400
-    });
-}
-function abstButtonExt() {
-    anime.remove('button#abst.pg');
-    anime({
-        targets: 'button#abst.pg',
-        scale: 1,
-        duration: 3000,
-        elasticity: 400
-    });
-}
-
-function mohButtonEnt() {
-    anime.remove('button#mohra.pg');
-    anime({
-        targets: 'button#mohra.pg',
-        scale: 1.3,
-        duration: 3000,
-        elasticity: 400
-    });
-}
-function mohButtonExt() {
-    anime.remove('button#mohra.pg');
-    anime({
-        targets: 'button#mohra.pg',
-        scale: 1,
-        duration: 3000,
-        elasticity: 400
-    });
-}
-
-function blgButtonEnt() {
-    anime.remove('button#blog.pg');
-    anime({
-        targets: 'button#blog.pg',
-        scale: 1.3,
-        duration: 3000,
-        elasticity: 400
-    });
-}
-function blgButtonExt() {
-    anime.remove('button#blog.pg');
-    anime({
-        targets: 'button#blog.pg',
-        scale: 1,
-        duration: 3000,
-        elasticity: 400
-    });
-}
-function abtButtonEnt() {
-    anime.remove('button#about.pg');
-    anime({
-        targets: 'button#about.pg',
-        scale: 1.3,
-        duration: 3000,
-        elasticity: 400
-    });
-}
-function abtButtonExt() {
-    anime.remove('button#about.pg');
-    anime({
-        targets: 'button#about.pg',
-        scale: 1,
-        duration: 3000,
-        elasticity: 400
-    });
-}
 function windowResized() {
     logo.remove();
     copyright.remove();
@@ -141,15 +48,47 @@ function setLogo() {
 
 
 }
+
 function setPages() {
     bar_y = 0.05*height;
-    bar_p = width/8;
-    abstraction = createButton('abstraction');
+    bar_p = width/3;
+
+
+    abstraction = createButton('Projects');
     abstraction.id('abst');
     abstraction.class('pg');
+    about = createButton('About');
+    about.id('about');
+    about.class('pg');
+
     if(width >= 880) {
-        abstraction.style('font-size', '14px');
-        abstraction.position(width/2 - bar_p*2 - abstraction.width/2 , bar_y);
+        abstraction.style('font-size', '18px');
+        abstraction.position(width/2 - bar_p*.5 - abstraction.width/2 , bar_y);
+        about.style('font-size', '18px');
+        about.position(width/2 + bar_p*.5 - about.width/2 , bar_y);
+
+        var abst_entry = anime({
+            targets: 'button#abst.pg',
+            translateX: [-100,0],
+            duration: 3000,
+            elasticity: 400
+        });
+        var abt_entry = anime({
+            targets: 'button#about.pg',
+            translateX: [100,0],
+            duration: 3000,
+            elasticity: 400
+        });
+
+
+
+
+    } else {
+        abstraction.style('font-size', '12px');
+        abstraction.position(width/2 - bar_p - abstraction.width/2, bar_y);
+        about.style('font-size', '12px');
+        about.position(width/2 + bar_p - about.width/2 , bar_y);
+
         var abst_entry = anime({
             targets: 'button#abst.pg',
             translateX: [-100,0],
@@ -157,108 +96,20 @@ function setPages() {
             elasticity: 400
         });
 
-    } else {
-        abstraction.style('font-size', '8px');
-        abstraction.position(width/2 - abstraction.width/3, bar_y*2.5);
-        var abst_entry = anime({
-            targets: 'button#abst.pg',
-            translateX: [-100,0],
+        var abt_entry = anime({
+            targets: 'button#about.pg',
+            translateX: [100,0],
             duration: 3000,
             elasticity: 400
         });
+
+
 
 
     }
 
     abstraction.mouseOver(abstButtonEnt);
     abstraction.mouseOut(abstButtonExt);
-
-
-
-
-    mohra = createButton('Mohra');
-    mohra.id('mohra');
-    mohra.class('pg');
-    if(width >= 880) {
-        mohra.style('font-size', '14px');
-        mohra.position(width/2 - bar_p - mohra.width/2 , bar_y);
-        var mohra_entry = anime({
-            targets: 'button#mohra.pg',
-            translateX: [-100,0],
-            duration: 3000,
-            elasticity: 400
-        });
-
-    } else {
-        mohra.style('font-size', '8px');
-        mohra.position(width/2 - mohra.width/3, bar_y*3.5);
-
-        var mohra_entry = anime({
-            targets: 'button#mohra.pg',
-            translateX: [100,0],
-            duration: 3000,
-            elasticity: 400
-        });
-
-    }
-
-    mohra.mouseOver(mohButtonEnt);
-    mohra.mouseOut(mohButtonExt);
-
-
-    blog = createButton('Blog');
-    blog.id('blog');
-    blog.class('pg');
-    if(width >= 880) {
-        blog.style('font-size', '14px');
-        blog.position(width/2 + bar_p - blog.width/2 , bar_y);
-        var blog_entry = anime({
-            targets: 'button#blog.pg',
-            translateX: [100,0],
-            duration: 3000,
-            elasticity: 400
-        });
-
-    } else {
-        blog.style('font-size', '8px');
-        blog.position(width/2 - blog.width/3 , bar_y*4.5);
-        var blog_entry = anime({
-            targets: 'button#blog.pg',
-            translateX: [-100,0],
-            duration: 3000,
-            elasticity: 400
-        });
-
-    }
-
-    blog.mouseOver(blgButtonEnt);
-    blog.mouseOut(blgButtonExt);
-
-    about = createButton('About');
-    about.id('about');
-    about.class('pg');
-    if(width >= 880) {
-        about.style('font-size', '14px');
-        about.position(width/2 + bar_p*2 - about.width/2 , bar_y);
-        var abt_entry = anime({
-            targets: 'button#about.pg',
-            translateX: [100,0],
-            duration: 3000,
-            elasticity: 400
-        });
-
-    } else {
-        about.style('font-size', '8px');
-        about.position(width/2 - about.width/3 , bar_y*5.5);
-        var abt_entry = anime({
-            targets: 'button#about.pg',
-            translateX: [100,0],
-            duration: 3000,
-            elasticity: 400
-        });
-
-    }
-
     about.mouseOver(abtButtonEnt);
     about.mouseOut(abtButtonExt);
 
@@ -314,3 +165,101 @@ function draw() {
     box(box_x+ abs((10 * sin(frameCount *0.02))),box_y + abs((10 * cos(frameCount *0.01))));
     pop();
 }
+
+
+
+
+// Animations
+function logoButtonEnt() {
+    anime.remove('button#lg.logo');
+    anime({
+        targets: 'button#lg.logo',
+        scale: 1.3,
+        duration: 3000,
+        elasticity: 400
+    });
+}
+function logoButtonExt() {
+    anime.remove('button#lg.logo');
+    anime({
+        targets: 'button#lg.logo',
+        scale: 1,
+        duration: 3000,
+        elasticity: 400
+    });
+}
+
+function abstButtonEnt() {
+    anime.remove('button#abst.pg');
+    anime({
+        targets: 'button#abst.pg',
+        scale: 1.3,
+        duration: 3000,
+        elasticity: 400
+    });
+}
+function abstButtonExt() {
+    anime.remove('button#abst.pg');
+    anime({
+        targets: 'button#abst.pg',
+        scale: 1,
+        duration: 3000,
+        elasticity: 400
+    });
+}
+function mohButtonEnt() {
+    anime.remove('button#mohra.pg');
+    anime({
+        targets: 'button#mohra.pg',
+        scale: 1.3,
+        duration: 3000,
+        elasticity: 400
+    });
+}
+function mohButtonExt() {
+    anime.remove('button#mohra.pg');
+    anime({
+        targets: 'button#mohra.pg',
+        scale: 1,
+        duration: 3000,
+        elasticity: 400
+    });
+}
+
+function blgButtonEnt() {
+    anime.remove('button#blog.pg');
+    anime({
+        targets: 'button#blog.pg',
+        scale: 1.3,
+        duration: 3000,
+        elasticity: 400
+    });
+}
+function blgButtonExt() {
+    anime.remove('button#blog.pg');
+    anime({
+        targets: 'button#blog.pg',
+        scale: 1,
+        duration: 3000,
+        elasticity: 400
+    });
+}
+function abtButtonEnt() {
+    anime.remove('button#about.pg');
+    anime({
+        targets: 'button#about.pg',
+        scale: 1.3,
+        duration: 3000,
+        elasticity: 400
+    });
+}
+function abtButtonExt() {
+    anime.remove('button#about.pg');
+    anime({
+        targets: 'button#about.pg',
+        scale: 1,
+        duration: 3000,
+        elasticity: 400
+    });
+}
+
