@@ -24,9 +24,9 @@ function setLogo() {
     logo.center('horizontal');
     var ani_entry = anime({
         targets: 'button#lg.logo',
-        translateY: [-100,0],
-        duration: 1000,
-        elasticity: 200
+        translateY: [-250,0],
+        duration: 1500,
+        elasticity: 600
     });
     logo.mouseOver(logoButtonEnt);
     logo.mouseOut(logoButtonExt);
@@ -42,7 +42,7 @@ function logoButtonEnt() {
         targets: 'button#lg.logo',
         scale: 1.3,
         duration: 1000,
-        elasticity: 400
+        elasticity: 700
     });
 }
 function logoButtonExt() {
@@ -51,7 +51,7 @@ function logoButtonExt() {
         targets: 'button#lg.logo',
         scale: 1,
         duration: 1000,
-        elasticity: 400
+        elasticity: 600
     });
 }
 
@@ -65,7 +65,7 @@ function logoButtonCli() {
         targets: 'button#lg.logo',
         color: 'rgb(235, 88, 81)',
         duration: 1000,
-        elasticity: 400
+        elasticity: 200
     });
 }
 function logoButtonUnc() {
@@ -74,6 +74,6 @@ function logoButtonUnc() {
         targets: 'button#lg.logo',
         color: 'rgb(255, 255, 255)',
         duration: 1000,
-        elasticity: 100,
+        elasticity: 600,
     });
 }

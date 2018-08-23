@@ -7,16 +7,18 @@
   
     
 function setprojp() {
-    projp = createP('coming 2020');
+    projp = createDiv('projp');
+    var projp1 = createP('Under Construction');
+    projp1.parent(projp);
     projp.id('projp');
-    projp.class('par');
+    projp1.class('par');
     if(width >= 880) {
-        projp.style('font-size', '22px');
+        projp.style('font-size', '14px');
     } else {
-        projp.style('font-size', '16px');
+        projp.style('font-size', '12px');
     }
-    projp.position(width/2, 0.3*height);
-    projp.center('horizontal');
+    projp1.position(width/2, 0.6*height);
+    projp1.center('horizontal');
 }
  
 function projButtonEnt() {
@@ -25,7 +27,7 @@ function projButtonEnt() {
         targets: 'button#proj.pg',
         scale: 1.3,
         duration: 1000,
-        elasticity: 400
+        elasticity: 700
     });
 }
 function projButtonExt() {
@@ -34,7 +36,7 @@ function projButtonExt() {
         targets: 'button#proj.pg',
         scale: 1,
         duration: 1000,
-        elasticity: 400
+        elasticity: 600
     });
 }
 function projButtonCli() {
@@ -46,9 +48,9 @@ function projButtonCli() {
     anime.remove('button#proj.pg');
     anime({
         targets: 'button#proj.pg',
-        color: 'rgb(255, 88, 81)',
+        color: 'rgb(88, 235, 81)',
         duration: 1000,
-        elasticity: 100,
+        elasticity: 200,
     });
 }
 function projButtonUnc() {
@@ -57,7 +59,7 @@ function projButtonUnc() {
         targets: 'button#proj.pg',
         color: 'rgb(255, 255, 255)',
         duration: 1000,
-        elasticity: 100,
+        elasticity: 600,
     });
 }
     

@@ -27,15 +27,15 @@ function setPages() {
 
         var proj_entry = anime({
             targets: 'button#proj.pg',
-            translateX: [-100,0],
+            translateX: [-150,0],
             duration: 1500,
-            elasticity: 400
+            elasticity: 600,
         });
         var ab_entry = anime({
             targets: 'button#about.pg',
-            translateX: [100,0],
+            translateX: [150,0],
             duration: 1500,
-            elasticity: 100
+            elasticity: 600,
         });
 
 

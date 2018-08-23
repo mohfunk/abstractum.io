@@ -7,16 +7,25 @@
   
     
 function setabtp() {
-    abtp = createP('Hi');
+    abtp = createDiv('abtp');
+    var abtp1 = createP('Hi, i\'m a programmer at monupon.studio <br> currently working on Wild Thieves & Mohra, an arabic programming language. </br>');
+    var abtp2 = createP('Contact: moh@abstractum.io');
+    abtp1.parent(abtp);
+    abtp2.parent(abtp);
     abtp.id('abtp');
-    abtp.class('par');
+    abtp1.class('par');
+    abtp2.class('par');
     if(width >= 880) {
-        abtp.style('font-size', '16px');
+        abtp1.style('font-size', '16px');
+        abtp2.style('font-size', '16px');
     } else {
-        abtp.style('font-size', '12px');
+        abtp1.style('font-size', '12px');
+        abtp2.style('font-size', '12px');
     }
-    abtp.position(width/2, 0.3*height);
-    abtp.center('horizontal');
+    abtp1.position(width/2, 0.3*height);
+    abtp2.position(width/2, 0.6*height);
+    abtp1.center('horizontal');
+    abtp2.center('horizontal');
 }
   
 function abtButtonEnt() {
@@ -25,7 +34,7 @@ function abtButtonEnt() {
         targets: 'button#about.pg',
         scale: 1.3,
         duration: 1000,
-        elasticity: 400
+        elasticity: 700
     });
 }
 function abtButtonExt() {
@@ -34,7 +43,7 @@ function abtButtonExt() {
         targets: 'button#about.pg',
         scale: 1,
         duration: 1000,
-        elasticity: 400
+        elasticity: 600
     });
 }
 function abtButtonCli() {
@@ -46,9 +55,10 @@ function abtButtonCli() {
     anime.remove('button#about.pg');
     anime({
         targets: 'button#about.pg',
-        color: 'rgb(235, 88, 81)',
+        color: 'rgb(88, 88, 235)',
         duration: 1000,
-        elasticity: 400
+        elasticity: 200,
+
     });
 }
 function abtButtonUnc() {
@@ -57,7 +67,7 @@ function abtButtonUnc() {
         targets: 'button#about.pg',
         color: 'rgb(255, 255, 255)',
         duration: 1000,
-        elasticity: 100,
+        elasticity: 600,
     });
 }
     
