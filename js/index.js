@@ -17,8 +17,8 @@ function setup() {
     createCanvas(windowWidth, windowHeight, WEBGL);
     background(0);
     if(width >= 880) {
-        box_x = 30;
-        box_y = 70;
+        box_x = 70;
+        box_y = 50;
     } else {
         box_x = 15;
         box_y = 35;

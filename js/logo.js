@@ -4,7 +4,7 @@
  *
  * Distributed under terms of the MIT license.
  */
-  
+
 function setLogo() {
     logo = createButton('Abstractum');
     logo.id('lg');
@@ -15,11 +15,11 @@ function setLogo() {
     // logo.attribute('onclick', 'location.href=\'/index.html\'');
 
     if(width >= 880 ) {
-        logo.style('font-size', '32px'); 
+        logo.style('font-size', '32px');
         logo.position(width/2 - logo.width/2, bar_y + 30 + 16);
     } else {
-        logo.style('font-size', '24px'); 
-        logo.position(width/2 - logo.width/2, height/2 + moon_size);
+        logo.style('font-size', '24px');
+        logo.position(width/2 - logo.width/2, height/2 + 100);
     }
     logo.center('horizontal');
     var ani_entry = anime({
@@ -77,5 +77,3 @@ function logoButtonUnc() {
         elasticity: 100,
     });
 }
-
-    
