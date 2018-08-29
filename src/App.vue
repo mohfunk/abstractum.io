@@ -77,6 +77,33 @@ a.r.router-link-exact-active {
         color: #EB3C3C;
 
 }
+@media only screen and (max-width: 600px) {
+    a {
+        font-size: 18px;
+    }
+    a.r {
+        top: 10%;
+        font-size: 26px;
+        left: 53%
+    }
+    a.g, a.b {
+        left: 50%;
+        right: 50%;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    a.g {
+        top: 18%;
+        margin-left: -40%;
+
+    }
+    a.b {
+        top: 18%;
+        margin-right: -40%;
+    }
+
+
+}
 
 
 </style>
