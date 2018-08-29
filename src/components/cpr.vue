@@ -27,6 +27,7 @@ p {
     margin-left:auto;
     margin-right:auto;
     position: fixed;
+    line-height: 15px;
     text-align: center;
     vertical-align: middle;
     transform: translate(-50%, 0%);

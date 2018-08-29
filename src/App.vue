@@ -1,17 +1,20 @@
 <template>
     <div id="app">
-                <router-link class="g" to="/projects">Projects</router-link>
-                <router-link class="r" to="/">Abstractum</router-link>
-                <router-link class="b" to="/about">About</router-link> 
-            <CopyRight date="2018" cp="Mohammed Fahad" loc="Waterloo, On" />
+        <bg></bg>
+        <router-link class="g" to="/projects">Projects</router-link>
+        <router-link class="r" to="/">Abstractum</router-link>
+        <router-link class="b" to="/about">About</router-link> 
+        <CopyRight date="2018" cp="Mohammed Fahad" loc="Waterloo, On" />
         <router-view/>
     </div>
 </template>
 <script>
 import CopyRight from "./components/cpr.vue";
+import bg from "./components/bg.vue";
 export default {
     name: 'home',
     components: {
+        bg,
         CopyRight
     }
 }
@@ -74,7 +77,7 @@ a.b.router-link-exact-active {
 
 }
 a.r.router-link-exact-active {
-        color: #EB3C3C;
+    color: #EB3C3C;
 
 }
 @media only screen and (max-width: 600px) {
