@@ -1,6 +1,6 @@
 <template>
     <div class="CopyRight">
-        <p> © {{ date }} {{ cp }}. All Rights Reserved. <br> {{ loc }}. </p> 
+        <p>© {{ date }} {{ cp }}. </p> 
     </div>
 </template>
 
