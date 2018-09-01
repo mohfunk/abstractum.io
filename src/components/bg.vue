@@ -26,7 +26,7 @@ export default {
             sketch.background(0);
         },
         draw(sketch) {
-            sketch.background(10);
+            sketch.background(10, 0);
             sketch.noStroke();
             sketch.fill(190);
             sketch.normalMaterial();
