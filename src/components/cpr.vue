@@ -1,6 +1,8 @@
 <template>
     <div class="CopyRight">
-        <p>© {{ date }} {{ cp }}. </p> 
+        <p> MIT © {{ date }} {{ cp }}<br><a href="https://github.com/mohfunk/abstractum.io">Fork on
+            Github</a></p>
+
     </div>
 </template>
 
@@ -19,7 +21,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 
-p {
+p,a {
     font-family: futura;
     font-size: 12px;
     color: #3e3e3e;
@@ -33,5 +35,17 @@ p {
     transform: translate(-50%, 0%);
     top: 90%;
     left: 50%
+}
+
+a {
+    margin-top: 3px;
+    transition: 1000ms;
+    text-decoration: underline;
+
+}
+a:hover {
+animation: none;
+transition: 1000ms;
+color: #bbbbbb;
 }
 </style>
