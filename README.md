@@ -1,6 +1,6 @@
 # abstractum.io
 
-Feel free to make it yours, copyright notice is only for the content in the website. (and because it looks cool)  
+Feel free to make it yours. 
 
 ## Setup
 Clone or download then from a terminal:
