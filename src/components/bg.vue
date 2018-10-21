@@ -1,9 +1,10 @@
 <template>
-    <div>
+    <div class="skt">
         <vue-p5 
-            @setup="setup"
-            @draw="draw">
-            </vue-p5>
+         @setup="setup"
+         @draw="draw"
+         @mouseclicked="mouseClick">
+        </vue-p5>
     </div>
 </template>
 
@@ -20,25 +21,29 @@ export default {
     }),
     methods: {
         setup(sketch) {
-            sketch.createCanvas(sketch.windowWidth, sketch.windowHeight, sketch.WEBGL);
+            sketch.pixelDensity(10);
+            sketch.createCanvas(250, 250, sketch.WEBGL);
             sketch.position(0,0);
             sketch.style('z-index', '-1');
             sketch.background(0);
+            sound.play();
         },
         draw(sketch) {
-            sketch.background(10, 0);
             sketch.noStroke();
-            sketch.fill(190);
             sketch.normalMaterial();
             sketch.push();
+            sketch.background(10,0);
             sketch.rotateZ(sketch.frameCount * 0.001);
-            sketch.rotateX(sketch.frameCount * 0.02);
-            sketch.rotateY(sketch.frameCount * 0.009);
-            sketch.box(50+ sketch.abs((10 * sketch.sin(sketch.frameCount
-                *0.02))),40 + sketch.abs((10 * sketch.cos(sketch.frameCount *0.01))));
+            sketch.rotateX(sketch.frameCount * 0.01);
+            sketch.rotateY(sketch.frameCount * 0.01);
+            sketch.box(30,50);
             sketch.pop();
-        }
+        },
     }
 };
 </script>
-
+<style lang="sass">
+.skt
+    -webkit-font-smoothing: antialiased
+    -moz-osx-font-smoothing: grayscale
+</style>

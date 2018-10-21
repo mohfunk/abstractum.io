@@ -1,0 +1,51 @@
+$numitems: 15
+$interval: 100/$numitems+1%
+$mid: 30%
+.header
+  display: flex
+  justify-content: space-between
+
+  .rt
+    display: flex
+    justify-content: flex-start
+    align-items: baseline
+    padding: 3%
+    a
+      font-family: $dos
+      font-size: 16px
+      font-weight: bold
+      text-decoration: none
+      color: $w1
+      display: block
+      padding-left: 1em
+      padding-right: 1em
+      +animation(bout 1500ms linear both)
+      &:hover
+        +animation(bin 1500ms linear both)
+        color: $rd
+      &.router-link-exact-active
+        color: $b3
+      &.ti
+        font-size: 32px
+        text-align: center
+
+  .icn
+    padding: 3%
+    display: flex
+    align-items: center
+    a
+      text-decoration: none
+    i
+      padding-left: 1em
+      padding-right: 1em
+      display: block
+      +animation(bout 1500ms linear both)
+      &:hover 
+        +animation(bin 1500ms linear both) 
+        cursor: pointer
+    color: $or
+    &#title
+      color: $or
+    color: $rd
+    
+
