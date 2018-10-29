@@ -33,4 +33,5 @@ export default {
 @import 'assets/sass/footer.sass'
 @import 'assets/sass/cont.sass'
 @import 'assets/sass/post.sass'
+@import 'assets/sass/about.sass'
 </style>
