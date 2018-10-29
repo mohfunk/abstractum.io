@@ -22,21 +22,21 @@ export default {
     methods: {
         setup(sketch) {
             sketch.pixelDensity(10);
-            sketch.createCanvas(250, 250, sketch.WEBGL);
+            sketch.createCanvas(sketch.windowWidth, sketch.windowHeight, sketch.WEBGL);
             sketch.position(0,0);
-            sketch.style('z-index', '-1');
+            //sketch.style('z-index', '-100');
             sketch.background(0);
             sound.play();
         },
         draw(sketch) {
-            sketch.noStroke();
-            sketch.normalMaterial();
+            sketch.background(0, 0);
             sketch.push();
-            sketch.background(10,0);
-            sketch.rotateZ(sketch.frameCount * 0.001);
-            sketch.rotateX(sketch.frameCount * 0.01);
-            sketch.rotateY(sketch.frameCount * 0.01);
-            sketch.box(30,50);
+                sketch.noStroke();
+                sketch.normalMaterial();
+                sketch.rotateZ(sketch.frameCount * 0.001);
+                sketch.rotateX(sketch.frameCount * 0.01);
+                sketch.rotateY(sketch.frameCount * 0.01);
+                sketch.box(80, 30+ sketch.abs((10 * sketch.sin(sketch.frameCount * 0.02))));
             sketch.pop();
         },
     }
@@ -46,4 +46,9 @@ export default {
 .skt
     -webkit-font-smoothing: antialiased
     -moz-osx-font-smoothing: grayscale
+    position: fixed
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    z-index: -10
 </style>

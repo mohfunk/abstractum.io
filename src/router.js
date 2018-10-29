@@ -1,7 +1,9 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
-
+import bpost from './views/blog.vue'
+import post from './views/play.vue'
+import ppost from './views/ref.vue'
 Vue.use(Router)
 
 export default new Router({
@@ -12,6 +14,11 @@ export default new Router({
             path: '/',
             name: 'home',
             component: Home
+        },
+        {
+            path: '/blog',
+            name: 'blog',
+            component: bpost
         },
         {
             path: '/about',
@@ -28,7 +35,20 @@ export default new Router({
             // this generates a separate chunk (about.[hash].js) for this route
             // which is lazy-loaded when the route is visited.
             component: () => import(/* webpackChunkName: "projects" */ './views/Projects.vue')
+        },
+        {
+        
+            path: '/b',
+            name: 'post',
+            component: post,
+        },
+        {
+            path: '/r',
+            name: 'ppost',
+            component: ppost
+        
         }
+
 
     ]
 })

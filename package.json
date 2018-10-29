@@ -8,7 +8,12 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "babel-runtime": "^6.26.0",
     "vue": "^2.5.17",
+    "vue-gallery": "^1.5.0",
+    "vue-loader": "^15.4.2",
+    "vue-markdown": "^2.2.4",
+    "vue-markdown-loader": "^2.4.1",
     "vue-p5": "^0.6.0",
     "vue-router": "^3.0.1",
     "vuex": "^3.0.1"

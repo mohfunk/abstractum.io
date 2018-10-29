@@ -6,3 +6,11 @@
     font-family: Anteb;
     src:url(fonts/Anteb-Medium.ttf);
 }
+
+
+@font-face {
+    font-family: Roboto;
+    src:url(fonts/Roboto/Roboto-Light.ttf);
+    src:url(fonts/Roboto/Roboto-Medium.ttf);
+    src:url(fonts/Roboto/Roboto-Regular.ttf);
+}

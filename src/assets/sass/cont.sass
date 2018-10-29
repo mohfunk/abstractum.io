@@ -1,0 +1,41 @@
+.cont
+  display: flex
+  flex-direction: column
+  justify-content: center
+  margin: 0 
+  padding: 0
+  a
+    display: flex
+    align-content: center
+    justify-content: center
+    width: 100vw
+    height: fit-content
+    .elem
+      width: 50vw
+      border-bottom-style: solid
+      border-bottom-width: 1px
+      border-bottom-color: $b4
+      
+    transition: background-color .5s ease-out;
+    text-decoration: none
+    &:hover
+      background: $bl8
+    h1
+      font-family: $fut
+      font-weight: 100
+      color: $w1
+      font-size: 18px
+      text-decoration: none
+    h4
+      font-family: $rob
+      font-weight: 200
+      font-size: 14px
+      color: $w4
+    h6
+      color: $w2
+      font-family: $rob
+      font-weight: 200
+    &:last-child 
+      .elem
+        border-bottom-style: none
+    
