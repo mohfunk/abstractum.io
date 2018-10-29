@@ -4,6 +4,9 @@ import Home from './views/Home.vue'
 import bpost from './views/blog.vue'
 import post from './views/play.vue'
 import ppost from './views/ref.vue'
+import Spin from './components/spin.vue'
+import Proc from './components/proc.vue'
+import Gala from './components/gala.vue'
 Vue.use(Router)
 
 export default new Router({
@@ -35,6 +38,31 @@ export default new Router({
             // this generates a separate chunk (about.[hash].js) for this route
             // which is lazy-loaded when the route is visited.
             component: () => import(/* webpackChunkName: "projects" */ './views/Projects.vue')
+        },
+        {
+            path: '/sketch',
+            name: 'skt',
+            // route level code-splitting
+            // this generates a separate chunk (about.[hash].js) for this route
+            // which is lazy-loaded when the route is visited.
+            component: () => import(/* webpackChunkName: "projects" */ './views/sketch.vue'),
+        },
+                
+        { 
+            path: '/spin', 
+            name: 'spin', 
+            component: Spin
+        },
+        { 
+            path: '/procgen', 
+            name: 'proc', 
+            component: Proc
+        },
+
+        { 
+            path: '/galaxy', 
+            name: 'gala', 
+            component: Gala
         },
         {
         
