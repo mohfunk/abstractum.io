@@ -6,10 +6,6 @@
                          :to="item.p"
                          >{{item.t}}</router-link>
         </div>
-        <div class="icn">
-            <router-link v-for="item in icn" :key="item.id" :to="item.p"><i
-                         :class="item.c"></i></router-link>
-        </div>
     </div>
 </template>
 

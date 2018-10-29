@@ -32,24 +32,35 @@ export default {
             h.reset(sketch);
             h1.reset(sketch);
             h2.reset(sketch);
-            h3.reset(sketch);
-            h4.reset(sketch);
-            h5.reset(sketch);
+            if(sketch.width > 600) {
+                h3.reset(sketch);
+                h4.reset(sketch);
+                h5.reset(sketch);
+            }
         },
         draw(sketch) {
             sketch.background(20, 20, 20);
             h.reset(sketch);
             h1.reset(sketch);
             h2.reset(sketch);
-            h3.reset(sketch);
-            h4.reset(sketch);
-            h5.reset(sketch);
-            h.headdraw(sketch, 3, 2);
-            h1.headdraw(sketch, 4, 2);
-            h2.headdraw(sketch, 5, 2);
-            h3.headdraw(sketch, 6, 2);
-            h4.headdraw(sketch, 7, 2);
-            h5.headdraw(sketch, 8, 2);
+            if(sketch.width > 600) {
+                h3.reset(sketch);
+                h4.reset(sketch);
+                h5.reset(sketch);
+            }
+
+            if(sketch.width > 600) {
+                h.headdraw(sketch, 3, 2);
+                h1.headdraw(sketch, 4, 2);
+                h2.headdraw(sketch, 5, 2);
+                h3.headdraw(sketch, 6, 2);
+                h4.headdraw(sketch, 7, 2);
+                h5.headdraw(sketch, 8, 2);
+            } else {
+                h1.headdraw(sketch, 1, 2);
+                h2.headdraw(sketch, 2, 2);
+
+            }
         },
     }
 };
