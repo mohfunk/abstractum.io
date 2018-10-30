@@ -1,6 +1,6 @@
 <template>
     <div>
-        <Cont :rts="[
+        <Cont class="square" :rts="[
                             {
                                 id: '1',
                                 t: 'Spining Cube',
@@ -16,7 +16,7 @@
                             },
                             {
                                 id: '3',
-                                t: 'Mayhem 2.0 Characters Generator',
+                                t: 'Faces',
                                 d: 'Pixel Art Character Generation',
                                 p: '/procgen',
                             

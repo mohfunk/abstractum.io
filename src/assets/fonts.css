@@ -1,8 +1,4 @@
 @font-face {
-    font-family: futura;
-    src:url(fonts/futura.ttf);
-}
-@font-face {
     font-family: Anteb;
     src:url(fonts/Anteb-Medium.ttf);
 }
@@ -18,5 +14,35 @@
 
 @font-face {
     font-family: Tajawal;
-    src:url(fonts/Tajawal/Tajawal-Regular.ttf)
+    src:url(fonts/Tajawal/Tajawal-Regular.ttf);
+}
+
+
+@font-face {
+    font-family: Neoa;
+    src:url(fonts/neo-arabic/NeoSansArabic.ttf);
+}
+
+@font-face {
+    font-family: Anteb;
+    src:url(fonts/Anteb-Medium.otf);
+}
+@font-face {
+    font-family: Nexa;
+    src:url(fonts/Nexa/Nexa-Light.otf);
+}
+@font-face {
+    font-family: futura;
+    src:url(fonts/Futura-LT/FuturaLT-Book.ttf);
+}
+
+@font-face {
+    font-family: Geo;
+    src:url(fonts/Georgia/Georgia.ttf);
+}
+
+
+@font-face {
+    font-family: mission;
+    src:url(fonts/Mission-Script/Mission-Script.otf);
 }

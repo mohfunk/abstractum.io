@@ -1,7 +1,7 @@
 <template>
     <div class="post">
-        <h1>Play</h1>
         <div class="text">
+        <h1>Play</h1>
             <h3>Definitions</h3>
             <p>I have always been frustrated with how Play is naively defined; for
             instance, this is how Google Defines it: </p>
