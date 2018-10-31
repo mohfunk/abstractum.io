@@ -4,6 +4,7 @@ import Home from './views/Home.vue'
 import bpost from './views/blog.vue'
 import post from './views/play.vue'
 import ppost from './views/ref.vue'
+import poster from './views/re.vue'
 import Spin from './components/spin.vue'
 import Proc from './components/proc.vue'
 import Gala from './components/gala.vue'
@@ -64,7 +65,11 @@ export default new Router({
             component: Gala
         },
         {
-        
+            path: '/aa',
+            name: 'poster',
+            component: poster,
+        },
+        {
             path: '/b',
             name: 'post',
             component: post,

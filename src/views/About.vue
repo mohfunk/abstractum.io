@@ -18,6 +18,6 @@
                 Waterloo, Ontario.</h5>
             <img class="ic" src="../assets/img/ca.png" width="16px">
         </div>
-        <img src="../assets/img.png">
+        <img src="../assets/img/img.png">
     </div>
 </template>
