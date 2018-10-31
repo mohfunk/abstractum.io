@@ -8,10 +8,12 @@
                                 { id: '4', t: 'sketchings', p: '/sketch' },
                                 { id: '3', t: 'about', p: '/about' }
                                 ]"/>
-        <Footer/>
+        <div class="content">
         <transition name="fade" mode="out-in">
         <router-view/>
         </transition>
+        </div>
+        <Footer/>
     </div>
 </template>
 <script>

@@ -4,7 +4,7 @@
             <h1>We Are but Reformers</h1>
             <div id="ar">
             <arabic txt="إِنَّمَا نَحْنُ مُصْلِحُونَ" />
-                <h4>إِنَّمَا نَحْنُ مُصْلِحُونَ</h4>
+            <h4> إِنَّمَا نَحْنُ مُصْلِحُونَ</h4>
             </div>
             <p>
             As a child, I dreamt of a world-leading Saudi Arabia, one that kept me optimistic when all around me pointed to our incompetence. I assured myself: "when I grow up, I will rebuild my country." I genuinely wanted my people to flourish. We only had Wahhabi clerks to idolize, those failed to speak to me; in fact, they preached of death, fire, and torture. As a child, I pictured snakes wrapped around my dead body beneath the dirt of my grave. That was not exclusive to me, millions of Saudis lived it. I, however, decided to leave and Indeed, I Left Saudi to study in Canada. Nevertheless, I belong to my people, and to them, I had every intention to return.

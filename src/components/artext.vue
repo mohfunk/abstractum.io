@@ -1,5 +1,5 @@
 <template>
-    <div class="ar">
+    <div class="arr">
         <h4 v-html="ht"></h4>
     </div>
 </template>

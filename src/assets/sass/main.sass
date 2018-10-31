@@ -15,28 +15,9 @@ $winh: 100vh
   min-width: 100vw
   min-height: 100vh
   margin: 0
-  &.dark
-    background: $bl8
-    color: $w4
-  &.light
-    background: $w4
-    color: $bl5
-
-  .sideBar
-    display: flex
-    width: 30vw
-    height: 5vh
-    position: fixed
-    top: 95vh
-    flex-direction: row
-    align-content: center
-    align-items: center
-    vertical-align: bottom
-    padding: 0
-    justify-content: flex-start
-    i
-      margin: 0 20px 0 20px
-
+  display: flex
+  flex-direction: column
+  justify-content: center
 #nav
   padding: 30px
 
@@ -63,3 +44,13 @@ body
     color: $w1
     &.timeline-item
       border-bottom-style: none
+
+.content
+  flex-grow: 2
+  display: flex
+  justify-content: center
+  align-content: center
+  align-items: center
+  padding-bottom: 10%
+  &.post
+    padding: 0
