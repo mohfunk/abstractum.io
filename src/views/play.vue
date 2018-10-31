@@ -6,8 +6,8 @@
             <p>I have always been frustrated with how Play is naively defined; for
             instance, this is how Google Defines it: </p>
             <p></p>
-            <p class="cen"><q><i>Noun</i>: Play. Activity engaged in for enjoyment and recreation, especially by
-                children.</q></p>
+            <p class="cen qu"><q><i>Noun</i>: Play. Activity engaged in for enjoyment and recreation, especially by
+                    children.</q></p>
             <p>Play, in all its forms, is essential to us. Mammals and other animals seem to engage 
             in play; even dinosaurs, the deadly, cold-blooded reptiles, 
             had a playful side! Play comes in various forms; every kind of sport is a Play 

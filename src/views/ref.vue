@@ -3,7 +3,6 @@
         <div class="text">
             <h1>We Are but Reformers</h1>
             <div id="ar">
-            <arabic txt="إِنَّمَا نَحْنُ مُصْلِحُونَ" />
             <h4> إِنَّمَا نَحْنُ مُصْلِحُونَ</h4>
             </div>
             <p>

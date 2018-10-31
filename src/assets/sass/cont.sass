@@ -26,30 +26,25 @@
     height: fit-content
     .elem
       width: 50vw
-      border-bottom-style: solid
-      border-bottom-width: 1px
-      border-bottom-color: $b4
       
     transition: background-color .5s ease-out;
+
+    +animation(bout 1500ms linear both)
     text-decoration: none
     &:hover
       background: $bl8
+      +animation(bin 1500ms linear both)
     h1
       font-family: $fut
-      font-weight: 100
       color: $yl
-      font-size: 18px
+      font-size: 22px
       text-decoration: none
     h4
-      font-family: $rob
-      font-weight: 200
-      font-size: 14px
+      font-family: $fut
+      font-size: 16px
       color: $w4
     h6
       color: $w2
-      font-family: $rob
-      font-weight: 200
-    &:last-child 
-      .elem
-        border-bottom-style: none
+      font-size: 12px
+      font-family: $fut
     
