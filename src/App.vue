@@ -2,7 +2,7 @@
     <div id="app">
         <Header title="Abstractum" tpath="/" 
                                 :rts="[
-                                { id: '1', t: 'Projects', p:
+                                { id: '1', t: 'projects', p:
                                 '/projects' },
                                 { id: '2', t: 'blog', p: '/blog' },
                                 { id: '4', t: 'sketchings', p: '/sketch' },

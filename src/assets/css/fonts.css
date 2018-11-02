@@ -6,11 +6,26 @@
     font-family: Anteb;
     src:url(../fonts/Anteb/Anteb-Medium.ttf);
 }
+
 @font-face {
-    font-family: futura;
-    src:url(../fonts/Futura-LT/FuturaLT-Book.ttf);
+    font-family: Futura;
+    src:url(../fonts/FuturaPT/FuturaPT-Book.otf);
+    src:url(../fonts/FuturaPT/FuturaPT-Med.otf);
 }
 @font-face {
-    font-family: Geo;
+    font-family: Gill;
     src:url(../fonts/Gill-Sans/GillSansMTPro-Medium.otf);
+}
+@font-face {
+    font-family: Nexa;
+    src:url(../fonts/Nexa/Nexa-Bold.otf);
+}
+
+@font-face {
+    font-family: Frankfurter;
+    src:url(../fonts/Frankfurter/frankfurter.ttf);
+}
+@font-face {
+    font-family: Frontpage;
+    src:url(../fonts/Frontpage/frontage-regular.ttf);
 }

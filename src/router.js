@@ -5,6 +5,7 @@ import bpost from './views/blog.vue'
 import post from './views/play.vue'
 import ppost from './views/ref.vue'
 import poster from './views/re.vue'
+import ppost2 from './views/r.vue'
 import Spin from './components/spin.vue'
 import Proc from './components/proc.vue'
 import Gala from './components/gala.vue'
@@ -75,12 +76,14 @@ export default new Router({
             component: post,
         },
         {
-            path: '/r',
+            path: '/blog/r',
             name: 'ppost',
             component: ppost
-        
+        },
+        {
+            path: '/blog/ds',
+            name: 'ppost2',
+            component: ppost2
         }
-
-
     ]
 })

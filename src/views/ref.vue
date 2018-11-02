@@ -1,9 +1,10 @@
 <template>
     <div class="post">
         <div class="text">
+
+            <h4>وَإِذَا قِيلَ لَهُمْ لَا تُفْسِدُوا فِي الْأَرْضِ قَالُوا إِنَّمَا نَحْنُ مُصْلِحُونَ  </h4>
             <h1>We Are but Reformers</h1>
             <div id="ar">
-            <h4> إِنَّمَا نَحْنُ مُصْلِحُونَ</h4>
             </div>
             <p>
             As a child, I dreamt of a world-leading Saudi Arabia, one that kept me optimistic when all around me pointed to our incompetence. I assured myself: "when I grow up, I will rebuild my country." I genuinely wanted my people to flourish. We only had Wahhabi clerks to idolize, those failed to speak to me; in fact, they preached of death, fire, and torture. As a child, I pictured snakes wrapped around my dead body beneath the dirt of my grave. That was not exclusive to me, millions of Saudis lived it. I, however, decided to leave and Indeed, I Left Saudi to study in Canada. Nevertheless, I belong to my people, and to them, I had every intention to return.
@@ -23,7 +24,7 @@
             <p>
             I eventually found the warmth of my people, not in those residing in it, but in those dissented from it. May they rest in peace. I weep for those who take the Quran as their constitution, then corrupt while claiming to be reformers; they failed to read the second page of their "constitution."
             </p>
-            <h3> To be Continued</h3>
+            <h4>أَلَا إِنَّهُمْ هُمُ الْمُفْسِدُونَ وَلَٰكِن لَّا يَشْعُرُونَ </h4>
         </div>
     </div>
 </template>
