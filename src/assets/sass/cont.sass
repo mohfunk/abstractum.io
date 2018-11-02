@@ -7,7 +7,6 @@
   margin: 0 
   padding: 0
   &.square
- 
     flex-direction: row
     align-content: center
     align-items: center
@@ -23,12 +22,11 @@
     align-content: center
     justify-content: center
     width: 100vw
-    height: fit-content
+    height: border-box
     .elem
       width: 50vw
       
-    transition: background-color .5s ease-out;
-
+    transition: background-color 0.15s ease-in-out;
     +animation(bout 1500ms linear both)
     text-decoration: none
     &:hover
