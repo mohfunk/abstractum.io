@@ -45,5 +45,10 @@ export default new Router({
             name: 'Sketchings',
             component: Sketchings
         },
+        {
+            path: '/sketchings/spin',
+            name: 'spin',
+            component: () => import('./views/sketchings/Spin.vue')
+        },
     ],
 });
