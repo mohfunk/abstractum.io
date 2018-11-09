@@ -1,23 +1,21 @@
-# abstractum.io
+# abstum.io
 
-Feel free to make it yours. 
-
-## Setup
-Clone or download then from a terminal:
-```bash
-> cd path/to/abstractum.io   
-> yarn install
+## Project setup
 ```
-#### Compile and hot-reloads for development
-```bash
-> yarn run serve
+yarn install
 ```
 
-#### Compile and minifies for production
-```bash
-> yarn run build
+### Compiles and hot-reloads for development
+```
+yarn run serve
 ```
 
-## Deploy for github pages
+### Compiles and minifies for production
+```
+yarn run build
+```
 
-push abstractum.io/dist to your repo.
+### Lints and fixes files
+```
+yarn run lint
+```

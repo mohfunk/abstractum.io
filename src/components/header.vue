@@ -10,19 +10,16 @@
 </template>
 
 
-<script>
-export default {
-    name: 'Header',
+<script lang="ts">
+import { Component, Vue } from 'vue-property-decorator';
+@Component({
     props: {
-        title : String,
-        tpath : String,
-        rts: Array,
-        icn: Array
-    },
-    data() {
-        return {
-            msg: null
-        }
+        title: String,
+        tpath: String,
+        rts  : Array,
+        icn  : Array
     }
+})
+export default class Header extends Vue{
 }
 </script>

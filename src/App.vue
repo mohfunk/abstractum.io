@@ -1,33 +1,31 @@
 <template>
     <div id="app">
         <Header title="Abstractum" tpath="/" 
-                                :rts="[
-                                { id: '1', t: 'projects', p:
-                                '/projects' },
-                                { id: '2', t: 'blog', p: '/blog' },
-                                { id: '4', t: 'sketchings', p: '/sketch' },
-                                { id: '3', t: 'about', p: '/about' }
-                                ]"/>
-        <div class="content">
-        <transition name="fade" mode="out-in">
-        <router-view/>
-        </transition>
-        </div>
-        <Footer/>
+                                   :rts="[
+                                            {id: '0', t: 'projects',   p: '/projects'},
+                                            {id: '1', t: 'blog',       p: '/blog'},
+                                            {id: '2', t: 'sketchings', p: '/sketchings'},
+                                            {id: '3', t: 'about',      p: '/about'}
+                                         ]"/>
+            <div class="content">
+                <transition name="fade" mode="out-in">
+                <router-view/>
+                </transition>
+            </div>
+            <Footer/>
     </div>
 </template>
-<script>
-import Header from "./components/header.vue";
-import Footer from "./components/Footer.vue";
-export default {
-    name: 'home',
+<script lang="ts">
+import { Component, Vue } from 'vue-property-decorator';
+import Header from '@/components/header.vue';
+import Footer from '@/components/footer.vue';
+@Component({
     components: {
         Header,
-        Footer
-    }
-}
-
-
+        Footer,
+    },
+})
+export default class App extends Vue{}
 </script>
 <style lang="sass">
 @import 'assets/sass/main.sass'

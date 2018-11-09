@@ -1,15 +1,12 @@
-
 <template>
-    <div class="home">
-        <bg></bg>
-    </div>
+  <div class="home">
+  </div>
 </template>
-<script>
-import bg from "../components/bg.vue";
-export default {
-    name: 'home',
-    components: {
-        bg,
-    }
-}
+
+<script lang="ts">
+import { Component, Vue } from 'vue-property-decorator';
+@Component({
+  components: {},
+})
+export default class Home extends Vue {}
 </script>

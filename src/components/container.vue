@@ -11,20 +11,14 @@
     </div>
 </template>
 
-
-<script>
-export default {
-    name: 'Con',
+<script lang="ts">
+import { Component, Vue } from 'vue-property-decorator';
+@Component({
+    name: 'Container',
     props: {
-        rts: Array,
-        icn: Array
-    },
-    data() {
-        return {
-            msg: null
-        }
+        rts  : Array,
+        icn  : Array,
     }
-}
+})
+export default class Container extends Vue{}
 </script>
-<style lang="sass">
-</style>

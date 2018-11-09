@@ -4,10 +4,11 @@
     </div>
 </template>
 
-<script>
-export default {
-    name: 'Footer',
-    components: {
-    }
+<script lang="ts">
+import { Component, Vue } from 'vue-property-decorator';
+@Component({
+    name: 'Footer'
+})
+export default class Footer extends Vue{
 }
 </script>

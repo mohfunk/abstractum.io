@@ -1,30 +1,34 @@
 {
-  "name": "abstractum.io",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
-  },
-  "dependencies": {
-    "babel-runtime": "^6.26.0",
-    "vue": "^2.5.17",
-    "vue-gallery": "^1.5.0",
-    "vue-loader": "^15.4.2",
-    "vue-markdown": "^2.2.4",
-    "vue-p5": "^0.6.0",
-    "vue-router": "^3.0.1",
-    "vuex": "^3.0.1"
-  },
-  "devDependencies": {
-    "@vue/cli-plugin-babel": "^3.0.1",
-    "@vue/cli-plugin-eslint": "^3.0.1",
-    "@vue/cli-service": "^3.0.1",
-    "vue-markdown-loader": "^2.4.1",
-    "node-sass": "^4.9.3",
-    "sass-loader": "^7.1.0",
-    "vue-template-compiler": "^2.5.17",
-    "webpack": "^4.17.1"
-  }
+    "name": "abstum.io",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "serve": "vue-cli-service serve",
+        "build": "vue-cli-service build",
+        "lint": "vue-cli-service lint"
+    },
+    "dependencies": {
+        "axios": "^0.18.0",
+        "babel-runtime": "^6.26.0",
+        "vue": "^2.5.17",
+        "vue-class-component": "^6.0.0",
+        "vue-loader": "^15.4.2",
+        "vue-markdown": "^2.2.4",
+        "vue-markdown-it": "^0.9.3",
+        "vue-p5": "^0.7.1",
+        "vue-property-decorator": "^7.0.0",
+        "vue-router": "^3.0.1",
+        "vuex": "^3.0.1"
+    },
+    "devDependencies": {
+        "@vue/cli-plugin-babel": "^3.0.1",
+        "@vue/cli-plugin-typescript": "^3.0.1",
+        "@vue/cli-service": "^3.0.1",
+        "node-sass": "^4.9.0",
+        "sass-loader": "^7.0.1",
+        "typescript": "^3.0.0",
+        "vue-markdown-loader": "^2.4.1",
+        "vue-template-compiler": "^2.5.17",
+        "webpack": "^4.17.1"
+    }
 }
