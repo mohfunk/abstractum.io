@@ -23,12 +23,16 @@ $mid: 30%
       &:hover
         +animation(bin 1500ms linear both)
         color: $yl
-      &.router-link-exact-active
+      &.router-link-active
         color: $rd
       &.ti
         font-family: $ant
         font-size: 32px
         text-align: center
+        &.router-link-active
+          color: $w1
+        &.router-link-exact-active
+          color: $rd
 
   .icn
     padding: 3%

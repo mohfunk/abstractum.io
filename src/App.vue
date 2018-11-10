@@ -5,7 +5,8 @@
                                             {id: '0', t: 'projects',   p: '/projects'},
                                             {id: '1', t: 'blog',       p: '/blog'},
                                             {id: '2', t: 'sketchings', p: '/sketchings'},
-                                            {id: '3', t: 'about',      p: '/about'}
+                                            {id: '3', t: 'notes',      p: '/notes'},
+                                            {id: '4', t: 'about',      p: '/about'}
                                          ]"/>
             <div class="content">
                 <transition name="fade" mode="out-in">
