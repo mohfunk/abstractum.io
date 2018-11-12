@@ -1,25 +1,24 @@
 <template>
     <div class="header">
-        <div class="rt">
-            <router-link class="ti" :to="tpath" id="ti">{{ title }}</router-link>
-            <router-link v-for="item in rts" :key="item.id"
-                         :to="item.p"
-                         >{{item.t}}</router-link>
-        </div>
+        <router-link class="ti" :to="tpath" id="ti">{{ title }}</router-link>
+        <Links :rt="rts" />
     </div>
 </template>
 
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
+import Links from '@/components/links.vue'
 @Component({
+    name: 'Header',
     props: {
-        title: String,
-        tpath: String,
-        rts  : Array,
-        icn  : Array
+        rts: Object,
+    },
+    components: {
+        Links,
     }
 })
-export default class Header extends Vue{
-}
+export default class Header extends Vue{}
 </script>
+
+
