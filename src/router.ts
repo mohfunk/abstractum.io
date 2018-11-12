@@ -12,12 +12,9 @@ export default new Router({
     base: process.env.BASE_URL,
     routes: [
         // Main
-        { path: '/',           name: 'home',       component: Home },
-        { path: '/projects',   name: 'projects',   component: Projects },
-        { path: '/blog',       name: 'blog',       component: Blog },
-        { path: '/sketchings', name: 'Sketchings', component: Sketchings },
-        { path: '/notes',      name: 'notes',      component: Notes },
-        { path: '/about',      name: 'about',      component: About },
+
+        { path: '/',         name: 'home',       component: Home },
+        { path: '/:p',         name: 'projects',       component: Blog, props: true},
         // Projects
         //{ path: '/projects/wild-thieves', name: 'wild-thieves', component: () => import('./views/projects/wild-thieves.vue') },
         //{ path: '/projects/mohra',        name: 'mohra',        component: () => import('./views/projects/mohra.vue') },

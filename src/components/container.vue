@@ -1,13 +1,15 @@
 <template>
     <div class="cont">
-        <router-link v-for="item in rts" :key="item.id" :to="item.p">
+        <transition-group name="fade" mode="out-in" duration="1000">
+        <router-link v-for="item in blog.arr" :key="item.id" :to="item.p">
             <div class="elem">
                 <h1>{{item.t}}</h1>
                 <h4>{{item.d}}</h4>
                 <h6>{{item.date}}</h6>
             </div>
         </router-link>
-    </div>
+        </transition-group>
+
     </div>
 </template>
 
@@ -16,8 +18,7 @@ import { Component, Vue } from 'vue-property-decorator';
 @Component({
     name: 'Container',
     props: {
-        rts  : Array,
-        icn  : Array,
+        blog: Object,
     }
 })
 export default class Container extends Vue{}

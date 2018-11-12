@@ -1,37 +1,33 @@
 <template>
     <div>
-        <Container :rts="[
-                            {
-                                id: '1',
-                                t: 'We Are But Reformers',
-                                d: 'My thoughts on the current Situation in Saudi Arabia',
-                                p: '/blog/reformers',
-                                date: 'Nov 2018'
-                            },
-                            {
-
-                                id: '0', 
-                                t: 'Play', 
-                                d: 'On the Importance of Play',
-                                p:'/blog/play',
-                                date: 'July 2017'
-                            }
-                         ]"/>
-
-        <transition name="fade" mode="out-in">
-        <router-view/>
-        </transition>
+        <Container :blog="rt"/>
+        </router-view>
     </div>
 </template>
 
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator';
+import { Component, Vue, Watch} from 'vue-property-decorator';
+import Router from '../router';
 import Container from '@/components/container.vue';
 @Component({
     name: 'Blog',
+    props: {
+        p: String,
+    },
     components: {
         Container
     },
 })
-export default class Blog extends Vue {}
+export default class Blog extends Vue {
+    data() {
+        return {
+            rt: this.rt = require('../assets/json/' + this.p + '.json')
+        }
+    }
+    @Watch('p')
+    onpChanged() { 
+        this.rt = require('../assets/json/' + this.p + '.json');
+        this.$forceUpdate();
+    }
+}
 </script>

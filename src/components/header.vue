@@ -1,6 +1,5 @@
 <template>
     <div class="header">
-        <router-link class="ti" :to="tpath" id="ti">{{ title }}</router-link>
         <Links :rt="rts" />
     </div>
 </template>
