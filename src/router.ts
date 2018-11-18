@@ -23,6 +23,7 @@ export default new Router({
         // Blog Posts
         { path: '/blog/reformers', name: 'reform', component: () => import('./views/blog/Reformers.vue') },
         { path: '/blog/play',      name: 'play',   component: () => import('./views/blog/Play.vue') },
+        { path: '/blog/Automatery',      name: 'Automatery',   component: () => import('./views/blog/Automatery.vue') },
         // Sketchings
         { path: '/sketchings/spin',    name: 'spin', component: () => import('./views/sketchings/Spin.vue') },
         //{ path: '/sketchings/genesis', name: 'spin', component: () => import('./views/sketchings/Genesis.vue') },

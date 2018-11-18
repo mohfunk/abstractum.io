@@ -1,4 +1,4 @@
-# abstum.io
+# abstractum.io
 
 ## Project setup
 ```

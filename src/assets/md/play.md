@@ -13,21 +13,17 @@ and as a student of its craft.
 ### Man And Animal
 We are the only species of the genus homo left; thus, we're inclined to assume
 that we're an exception. Without a doubt, Man is the most powerful animal on the
-planet; however, our dominance is newly acquired.   
-
-For millions of years, Man roamed the earth as a mammal of no significance; human infants were born prematurely, helpless, and fully dependent
+planet; however, our dominance is newly acquired. For millions of years, Man roamed the earth as a mammal of no significance; human infants were born prematurely, helpless, and fully dependent
 on their elders. Consequently, raising children was a task beyond the abilities of lone mothers; family members collaborated and socialized
-for raising their offspring. It is without a doubt how we developed
+to raise their offspring. It is without a doubt how we developed
 our most potent weapon: Language.   
 Nevertheless, We still procreate in a similar (if not identical) fashion to other mammals; we feed, protect, and care 
-for our young with the same passion and aggressiveness; we hunt, build homes to take shelter, communicate, survive as other animals do.   
-
+for our young with the same passion and aggressiveness; we hunt, take shelter, communicate, and survive as other animals do.
 However, man is a sophisticated animal; we advanced beyond the sphere of primal animal life.
 To socialize, we constructed societies and civilizations. From our instinct to procreate, 
-we developed social constructs, rules, and countless methods of engagement. Our need to suppress hunger inclined us to 
-develop rich cuisines. We may use tools and invent technologies to aid us in satisfying our basic instincts, 
-but those drives, in their essence, are not unique to us;
-our technologies and tools do not add a feature or alter their very essence.    
+we developed social constructs and countless methods of engagement. Our need to suppress hunger led to
+rich cuisines. We use tools and invent technologies to aid us in living,
+but our drives are not unique to us, we do not add new features or alter their very essence.    
 
 
 ### Man And Play
