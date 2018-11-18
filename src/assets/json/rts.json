@@ -1,24 +1,9 @@
 {
     "rts":
     [
-        { "id": "1", "params": { "p": "projects", "cls": "a"} },
-        { "id": "2", "params": { "p": "blog", "cls": "b" }},
-        { "id": "3", "params": { "p": "sketchings", "cls": "square"} },
-        { "id": "4", "params": { "p": "about", "cls": "c" }}
-    ],
-    "blog":
-    {
-        "rt-path": "/blog/",
-        "md-path": "@/assets/md/",
-        "arr": [
-
-            { "id": "2", "t": "We are but Reformers",  "d": "On the current disbutes", "date": "Nov 2018", "p": "reformers" },
-            { "id": "1", "t": "Play",                  "d": "An argument for Play", "date": "June 2017", "p": "play" }
-
-        ]
-    },
-    "skts":
-    [
-
+        { "id": "1", "p": "projects",   "to": "/projects" },
+        { "id": "2", "p": "blog",       "to": "/blog" },
+        { "id": "3", "p": "sketchings", "to": "/sketchings" },
+        { "id": "4", "p": "about",      "to": "/about" }
     ]
 }

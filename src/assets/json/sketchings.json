@@ -1,0 +1,8 @@
+{
+    "rts":
+    [
+        { "id": "1", "p": "faces",    "to": "/sketchings/faces" },
+        { "id": "1", "p": "gensis",   "to": "/sketchings/genesis" },
+        { "id": "1", "p": "spin",     "to": "/sketchings/spin" }
+    ]
+}

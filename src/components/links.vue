@@ -1,9 +1,9 @@
 <template>
     <div class="rt">
-        <router-link class="ti" to="/" id="ti" params="{ p: ''}">Abstractum</router-link>
+        <router-link class="ti" to="/" id="ti">Abstractum</router-link>
         <router-link v-for="item in rt.rts" :key="item.id"
-                     :to="item.params.p"
-                     >{{item.params.p}}</router-link>
+                     :to="item.to"
+                     >{{item.p}}</router-link>
     </div>
 </template>
 
@@ -15,5 +15,7 @@ import { Component, Vue } from 'vue-property-decorator';
         rt: Object,
     },
 })
-export default class Links extends Vue{}
+export default class Links extends Vue{
+
+}
 </script>
