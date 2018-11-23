@@ -1,5 +1,5 @@
-#### وَإِذَا قِيلَ لَهُمْ لَا تُفْسِدُوا فِي الْأَرْضِ قَالُوا إِنَّمَا نَحْنُ مُصْلِحُونَ  
 # We Are But Reformers
+#### Nov 2018, 2 mins read.
 As a child, I dreamt of a world-leading Saudi Arabia, one that kept me optimistic when all around me pointed to our incompetence.
 I assured myself: "when I grow up, I will rebuild my country." I genuinely wanted my people to flourish. We only had Wahhabi clerks to idolize,
 those failed to speak to me; in fact, they preached of death, fire, and torture. As a child,
@@ -33,5 +33,6 @@ I eventually found the warmth of my people, not in those residing in it, but in 
 May they rest in peace. I weep for those who take the Quran as their constitution, then corrupt while claiming to be reformers;
 they failed to read the second page of their "constitution."   
 
-#### أَلَا إِنَّهُمْ هُمُ الْمُفْسِدُونَ وَلَٰكِن لَّا يَشْعُرُونَ  
+##### وَإِذَا قِيلَ لَهُمْ لَا تُفْسِدُوا فِي الْأَرْضِ قَالُوا إِنَّمَا نَحْنُ مُصْلِحُونَ  
+##### أَلَا إِنَّهُمْ هُمُ الْمُفْسِدُونَ وَلَٰكِن لَّا يَشْعُرُونَ  
 

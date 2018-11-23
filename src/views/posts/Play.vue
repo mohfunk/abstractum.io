@@ -1,17 +1,17 @@
 <template>
     <div class="post">
         <div class="text">
-            <Post src="play"></Post>
+            <mdown src="play"></mdown>
         </div>
     </div>
 </template>
 
 <script>
-import Post from '@/components/post.vue';
+import mdown from '@/components/mdown.vue';
 export default {
     name: 'Play',
     components: {
-        Post,
+        mdown,
     },
-}
+};
 </script>

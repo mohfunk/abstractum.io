@@ -1,12 +1,12 @@
 <template>
-    <div class="cont">
-        <router-link v-for="item in cont" :key="item.id" :to="item.p">
-            <div class="elem">
-                <h1>{{item.t}}</h1>
-                <h4>{{item.d}}</h4>
-                <h6>{{item.date}}</h6>
-            </div>
-        </router-link>
+    <div class="cont" :id="cont.id">
+        <h3>{{cont.title}}</h3>
+        <div class="elem" v-for="item in cont.i" :key="item.id">
+                <h3>{{item.date}}</h3>
+            <router-link :to="item.to">
+                <h3>{{item.t}}</h3>
+            </router-link>
+        </div>
     </div>
 </template>
 

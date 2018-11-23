@@ -1,17 +1,17 @@
 <template>
     <div class="post">
         <div class="text">
-            <Post src="Auto"></Post>
+            <mdown src="ref"></mdown>
         </div>
     </div>
 </template>
 
 <script>
-import Post from '@/components/post.vue';
+import mdown from '@/components/mdown.vue';
 export default {
-    name: 'Play',
+    name: 'Ref',
     components: {
-        Post,
+        mdown,
     },
-}
+};
 </script>

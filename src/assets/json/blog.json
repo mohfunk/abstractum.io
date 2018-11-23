@@ -1,7 +1,9 @@
 {
-    "blog":
+    "title": "Blog Posts",
+    "id": "Blog",
+    "i":
     [
-        { "id": "2", "t": "We are but Reformers",  "d": "On the current disbutes", "date": "Nov 2018", "p": "reformers" },
-        { "id": "1", "t": "Play",                  "d": "An argument for Play", "date": "June 2017", "p": "play" }
+        { "id": "2", "date": "Nov 2018", "t": "We Are but Reformers",   "to": "/reformers" },
+        { "id": "1", "date": "Jun 2017", "t": "Play",       "to": "/play" }
     ]
 }

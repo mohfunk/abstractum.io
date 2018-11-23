@@ -1,14 +1,14 @@
 <script>
 import ref from '@/assets/md/ref.md';
 import play from '@/assets/md/play.md';
-import Auto from '@/assets/md/auto.md';
+import about from '@/assets/md/about.md';
 export default {
     name: 'Post',
     props: ["src"],
     components: {
         ref,
         play,
-        Auto
+        about
     },
     mounted() {
     },

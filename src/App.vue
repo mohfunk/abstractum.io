@@ -1,37 +1,31 @@
 <template>
     <div id="app">
-        <Header :rts="rt"/>
-            <div class="content">
-                <transition name="fade" mode="out-in">
-                <router-view/>
-                </transition>
+        <div class="header">
+            <router-link class="ti" to="/" id="ti"><h1>Mohammed Alhaythm</h1></router-link>
+            <div class="moh">
+                <p><i>hunc abstractum possident</i></p>
             </div>
-            <Footer/>
+        </div>
+        <div class="content">
+            <transition name="fade" mode="out-in">
+            <router-view/>
+            </transition>
+        </div>
     </div>
 </template>
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
-import Header from '@/components/header.vue';
-import Footer from '@/components/footer.vue';
 @Component({
     components: {
-        Header,
-        Footer,
     },
 })
 export default class App extends Vue{
-data() {
+    data() {
         return {
-            rt: require("./assets/json/rts.json"),
         }
     }
 }
 </script>
 <style lang="sass">
 @import 'assets/sass/main.sass'
-@import 'assets/sass/header.sass'
-@import 'assets/sass/footer.sass'
-@import 'assets/sass/cont.sass'
-@import 'assets/sass/post.sass'
-@import 'assets/sass/about.sass'
 </style>

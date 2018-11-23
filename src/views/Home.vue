@@ -1,20 +1,28 @@
 <template>
-  <div class="home">
-      <Skt :s="sk"/>
-  </div>
+    <div class="home">
+        <Container :cont="blog"/>
+        <div class="icns">
+            <a href="https://twitter.com/mohfunk"><i class="t fab fa-twitter"/></a>
+            <a href="https://github.com/mohfunk"><i class="g fab fa-github"/></a>
+            <router-link class="ti" to="/about" id="ti"><i class="q fas fa-question"/></router-link>
+        </div>
+    </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
-import Skt from '@/components/sketch.vue';
-import Spin from '@/assets/ts/spin.ts';
+import Container from '@/components/container.vue';
 @Component({
     name: 'home',
     components: {
-        Skt
+        Container
     },
 })
 export default class Home extends Vue {
-    sk = new Spin();
+    data() {
+        return {
+            blog: require("@/assets/json/blog.json"),
+        }
+    }
 }
 </script>

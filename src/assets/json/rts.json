@@ -1,9 +1,0 @@
-{
-    "rts":
-    [
-        { "id": "1", "p": "projects",   "to": "/projects" },
-        { "id": "2", "p": "blog",       "to": "/blog" },
-        { "id": "3", "p": "sketchings", "to": "/sketchings" },
-        { "id": "4", "p": "about",      "to": "/about" }
-    ]
-}
