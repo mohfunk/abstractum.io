@@ -2,13 +2,19 @@
 import ref from '@/assets/md/ref.md';
 import play from '@/assets/md/play.md';
 import about from '@/assets/md/about.md';
+import vis from '@/assets/md/vis.md';
+import mohra from '@/assets/md/mohra.md';
+import wt from '@/assets/md/wt.md';
 export default {
     name: 'Post',
     props: ["src"],
     components: {
         ref,
         play,
-        about
+        about,
+        vis,
+        wt,
+        mohra
     },
     mounted() {
     },

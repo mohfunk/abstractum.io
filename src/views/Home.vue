@@ -1,10 +1,13 @@
 <template>
     <div class="home">
-        <Container :cont="blog"/>
-        <div class="icns">
-            <a href="https://twitter.com/mohfunk"><i class="t fab fa-twitter"/></a>
-            <a href="https://github.com/mohfunk"><i class="g fab fa-github"/></a>
+        <div class="cnts">
+            <Container :cont="proj"/>
+            <Container :cont="blog"/>
+            <div class="icns">
+            <a href="https://github.com/mohfunk/abstractum.io.git"><i class="q fas
+                    fa-code-branch"/></a>
             <router-link class="ti" to="/about" id="ti"><i class="q fas fa-question"/></router-link>
+            </div>
         </div>
     </div>
 </template>
@@ -22,6 +25,7 @@ export default class Home extends Vue {
     data() {
         return {
             blog: require("@/assets/json/blog.json"),
+            proj: require("@/assets/json/proj.json"),
         }
     }
 }
