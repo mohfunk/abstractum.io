@@ -3,7 +3,7 @@
     "id": "Blog",
     "i":
     [
-        { "id": "2", "date": "Nov 2018", "t": "We Are but Reformers",   "to": "/reformers" },
+        { "id": "2", "date": "Nov 2018", "t": "We Are But Reformers",       "to": "/reformers" },
         { "id": "1", "date": "Jun 2017", "t": "Play",       "to": "/play" }
     ]
 }
