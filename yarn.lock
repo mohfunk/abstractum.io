@@ -7717,6 +7717,13 @@ vue-markdown@^2.2.4:
     markdown-it-task-lists "^2.0.1"
     markdown-it-toc-and-anchor "^4.1.2"
 
+vue-p5@^0.7.1:
+  version "0.7.1"
+  resolved "https://registry.yarnpkg.com/vue-p5/-/vue-p5-0.7.1.tgz#9899ba1550bb8087dc9d671d190046558fdacdf9"
+  integrity sha512-seUVCxqVyw2VvxviZ94b6Z7rEgBefDIc8xuyts0VcgTpqRqQ6TbYV6yDKf8N0EC0U43jBOkOIUwcJU8zj6tQhQ==
+  dependencies:
+    p5 "^0.7.2"
+
 vue-property-decorator@^7.0.0:
   version "7.2.0"
   resolved "https://registry.yarnpkg.com/vue-property-decorator/-/vue-property-decorator-7.2.0.tgz#8e6b0f4dcc630c357135f76366ba7bd91f1db015"

@@ -3,6 +3,7 @@
         <div class="cnts">
             <Container :cont="proj"/>
             <Container :cont="blog"/>
+            <skt/>
             <div class="icns">
             <a href="https://github.com/mohfunk/abstractum.io.git"><i class="q fas
                     fa-code-branch"/></a>
@@ -15,10 +16,12 @@
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
 import Container from '@/components/container.vue';
+import skt from '@/components/skt.vue';
 @Component({
     name: 'home',
     components: {
-        Container
+        Container,
+        skt
     },
 })
 export default class Home extends Vue {

@@ -15,6 +15,7 @@
         "vue-loader": "^15.4.2",
         "vue-markdown": "^2.2.4",
         "vue-markdown-it": "^0.9.3",
+        "vue-p5": "^0.7.1",
         "vue-property-decorator": "^7.0.0",
         "vue-router": "^3.0.1",
         "vuex": "^3.0.1"
