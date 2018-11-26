@@ -58,4 +58,4 @@ it is an unseemly name for a ruthless destroyer. Besides, the use of *Homo Faber
 > is a manifestation of man's innate being in nature, which represents the alienation from  and objectification of nature.   
 
 as the Italian philosopher [Umberto Eco](https://en.wikipedia.org/wiki/Umberto_Eco) argued. Johan Huizinga suggested *Homo 
-Ludens*, Man, the Player. Linguistically, however, the Latin word Ludens is more carries more meaning than merely *Play*.
+Ludens*, Man, the Player. Linguistically, however, the Latin word **Luden** carries more meaning than merely *Play*.

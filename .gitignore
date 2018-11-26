@@ -2,6 +2,7 @@
 node_modules
 /dist
 justfile
+.todos.json
 # local env files
 .env.local
 .env.*.local

@@ -1,23 +1,38 @@
-@import 'mi.sass'
-@import 'colors.sass'
-@import 'fonts.sass'
+// Setup
+=transform($property)
+  -webkit-transform: $property
+  -ms-transform:     $property
+  transform:         $property
+
+=animation($property)
+  -webkit-animation: $property
+  -ms-animation:     $property
+  animation:         $property
+$winw: 100vw
+$winh: 100vh
+// Colors
+$bl1: #000000
+$bl2: #111111
+$slv: #666666
+$rd : #FF4136
+$b1 : #0074D9
+$b2 : #001F3F
+$g1 : #3D9970
+$w1 : #FFFFFF
+// Fonts
+$fut: 'Futura'   , sans-serif
+$gil: 'Gill'     , sans-serif
+$taj: 'Tajawal'  , sans-serif
+$fpg: 'Frontpage', sans-serif
+$opn: 'OpenSans' , monospace
 @import 'anim.sass'
 @import 'post.sass'
 @import 'res.sass'
-$winw: 100vw
-$winh: 100vh
-
 body
-  left: 0
-  top: 0
-  height: 100%
-  margin: 0
-  padding: 0
-  overflow: scroll
   background: $w1 
 .fade-enter-active, .fade-leave-active
   transition: opacity .5s
-.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ 
+.fade-enter, .fade-leave-to 
   opacity: 0;
 
 #app
@@ -29,13 +44,8 @@ body
   align-items: center
   -webkit-font-smoothing: antialiased
   -moz-osx-font-smoothing: grayscale
-  text-align: center
   min-width: 100vw
-  max-width: 100vw
   min-height: 100vh
-  max-height: 100vh
-  margin: 0
-  padding: 0
   .header, .content
     display: flex
     flex-direction: column
@@ -53,7 +63,7 @@ body
 
     a
       text-decoration: none
-      color: $bl3
+      color: $bl2
     .moh
       display: flex
       justify-content: flex-start
@@ -88,14 +98,14 @@ body
         font-family: $gil
       font-size: 16px
       height: fit-content
-      color: $b3
+      color: $b1
       display: block
       padding-right: 1em
       text-decoration: none
       &:hover
-        color: $b4
+        color: $b2
       &.router-link-active
-        color: $b4
+        color: $b2
       &.ti
         text-align: left
         &.router-link-active
@@ -121,4 +131,4 @@ body
     &.g
       color: $bl1
     &.q
-      color: $b4 
+      color: $b2
