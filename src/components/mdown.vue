@@ -1,5 +1,6 @@
 <script>
 //mdsrc
+import sol from "@/assets/md/sol.md";
 import ref from '@/assets/md/ref.md';
 import play from '@/assets/md/play.md';
 import about from '@/assets/md/about.md';
@@ -12,6 +13,7 @@ export default {
     components: {
         ref,
 //mdcomp
+sol,
         play,
         about,
         vis,

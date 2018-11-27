@@ -2,10 +2,8 @@
     "title": "Projects",
     "id": "Proj",
     "i":
-    [
-        { "id": "1", "date": "Aug 2019", "t": "Wild Thieves",       "to": "/wt" },
-        { "id": "2", "date": "TBD 202X", "t": "Solitude",       "to": "/solitude" },
-        { "id": "3", "date": "TBD 202X", "t": "Mohra",       "to": "/mohra" },
-        { "id": "4", "date": "On Going", "t": "Audio Visualizer",       "to": "/vis" }
+[
+        { "id": "1", "date": "TBD 202X", "t": "Mohra",       "to": "/mohra" },
+        { "id": "2", "date": "On Going", "t": "Audio Visualizer",       "to": "/vis" }
     ]
 }

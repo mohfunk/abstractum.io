@@ -1,6 +1,7 @@
 <template>
     <div class="home">
         <div class="cnts">
+            <Container :cont="game"/>
             <Container :cont="proj"/>
             <Container :cont="blog"/>
             <skt/>
@@ -27,8 +28,9 @@ import skt from '@/components/skt.vue';
 export default class Home extends Vue {
     data() {
         return {
-            blog: require("@/assets/json/blog.json"),
+            game: require("@/assets/json/game.json"),
             proj: require("@/assets/json/proj.json"),
+            blog: require("@/assets/json/blog.json"),
         }
     }
 }
