@@ -1,4 +1,5 @@
 <script>
+//mdsrc
 import ref from '@/assets/md/ref.md';
 import play from '@/assets/md/play.md';
 import about from '@/assets/md/about.md';
@@ -10,6 +11,7 @@ export default {
     props: ["src"],
     components: {
         ref,
+//mdcomp
         play,
         about,
         vis,
