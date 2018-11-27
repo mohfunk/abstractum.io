@@ -1,1 +1,2 @@
-# Audio Visualization for the web
+# Audio Visualization
+#### Web based Audio Visualizer

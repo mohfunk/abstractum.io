@@ -1,5 +1,5 @@
 <template>
-    <div class="proj">
+    <div class="post">
         <div class="text">
             <mdown src="mohra"></mdown>
         </div>

@@ -26,3 +26,7 @@ export default class App extends Vue{
     }
 }
 </script>
+
+<style lang="sass">
+@import './assets/sass/proj.sass'
+</style>

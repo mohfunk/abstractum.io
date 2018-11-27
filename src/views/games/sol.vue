@@ -15,3 +15,10 @@ export default {
     },
 };
 </script>
+
+<style lang="sass">
+.proj
+    .text
+        h1
+            font-family: "Frontpage", sans-serif !important
+</style>
