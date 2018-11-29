@@ -1,9 +1,9 @@
 {
     "title": "Sketchings",
-    "id": "Skt",
+    "id": "Sket",
     "i":
 [
-        { "id": "2", "date": "Nov 2018", "t": "We Are But Reformers",       "to": "/reformers" },
-        { "id": "1", "date": "Jun 2017", "t": "Play",       "to": "/play" }
-    ]
+    { "id": "2", "date": "Jun 2018", "t": "Pixel Faces", "to": "/skt/faces" },
+    { "id": "1", "date": "May 2018", "t": "Spinning Cube", "to": "/skt/cube" }
+]
 }

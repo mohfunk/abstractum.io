@@ -2,6 +2,7 @@ import Vue from 'vue';
 import Router from 'vue-router';
 import Home from './views/Home.vue';
 import About from './views/About.vue';
+import Skt from './views/Skt.vue';
 //games.imp
 import sol from "./views/games/sol.vue";
 import Wt from './views/games/wt.vue';
@@ -18,8 +19,9 @@ Vue.use(Router);
 export default new Router({
     base: process.env.BASE_URL,
     routes: [
-        { path: '/',           name: 'home',     component: Home  },
-        { path: '/about',      name: 'about',    component: About },
+        { path: '/',           name: 'home',            component: Home  },
+        { path: '/about',      name: 'about',           component: About },
+        { path: '/skt',        name: 'sketchings',      component: Skt },
 //posts.path
 { path: "/fvsimp",  name: "fvsimp", component: fvsimp },
         { path: '/play',       name: 'play',     component: Play  },

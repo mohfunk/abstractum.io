@@ -9,6 +9,7 @@
             <a href="https://github.com/mohfunk/abstractum.io.git"><i class="q fas
                     fa-code-branch"/></a>
             <router-link class="ti" to="/about" id="ti"><i class="q fas fa-question"/></router-link>
+            <router-link class="ti" to="/skt" id="ti"><i class="q far fa-sticky-note"/></router-link>
             </div>
         </div>
     </div>
