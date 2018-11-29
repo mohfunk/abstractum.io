@@ -3,7 +3,7 @@
         <div class="header">
             <router-link class="ti" to="/" id="ti"><h1>Mohammed Alhaythm</h1></router-link>
             <div class="moh">
-                <p><i>hunc abstractum possident</i></p>
+                <p><i>hunc abstractum possidet</i></p>
             </div>
         </div>
         <div class="content">
