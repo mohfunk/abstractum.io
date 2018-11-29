@@ -9,6 +9,7 @@ import Wt from './views/games/wt.vue';
 import Mohra from './views/proj/mohra.vue';
 import Vis from './views/proj/vis.vue';
 //posts.imp
+import fvsimp from "./views/posts/fvsimp.vue";
 import Ref from './views/posts/Ref.vue';
 import Play from './views/posts/Play.vue';
 
@@ -20,6 +21,7 @@ export default new Router({
         { path: '/',           name: 'home',     component: Home  },
         { path: '/about',      name: 'about',    component: About },
 //posts.path
+{ path: "/fvsimp",  name: "fvsimp", component: fvsimp },
         { path: '/play',       name: 'play',     component: Play  },
         { path: '/reformers',  name: 'reform',   component: Ref   },
 //games.path

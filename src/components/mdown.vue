@@ -1,5 +1,6 @@
 <script>
 //mdsrc
+import fvsimp from "@/assets/md/fvsimp.md";
 import sol from "@/assets/md/sol.md";
 import ref from '@/assets/md/ref.md';
 import play from '@/assets/md/play.md';
@@ -13,6 +14,7 @@ export default {
     components: {
         ref,
 //mdcomp
+fvsimp,
 sol,
         play,
         about,
