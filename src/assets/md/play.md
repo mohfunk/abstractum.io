@@ -17,26 +17,24 @@ Without a doubt, Man is the dominant animal on the planet; however, our primacy 
 For millions of years, Man roamed the earth as a mammal of no significance; only withstanding the tremendous 
 liablities of raising human infants metamorphosed hominins into the modern human being. It is without a doubt 
 how we developed our most potent weapon: [Language.](https://www.theguardian.com/science/2004/dec/20/evolution.science)   
-Nevertheless, We still procreate in a similar fashion to other mammals; we feed, protect, and care for our young
-as aggressively; we hunt, take shelter, communicate, and survive as other animals do.
-The sophistication of our societies and civilization typifies the socialization instinct, the urge to procreate
-is manifisted in social constructs, we further culturized the consumption of Nutrient in our rich Cuisines. 
-We do not add features or alter the very essence of our instincts, we merely exhibit behavioral modernaity.   
+Nevertheless, the sophistication of our societies and civilizations typifies the socialization instinct; the urge to procreate
+is manifested in social constructs, we further culturized the consumption of nutrient in our rich Cuisines.
+We do not add features or alter the very essence of our instincts; we merely exhibit behavioural modernity.   
 
-### The Instinct of *Play* 
+### The Instinct of Play
 We do not expound Sex as an activity that adults engage in for orgasm; though equally shallow, the facileness of defining 
 *Play* as a recreational activity enjoyed by children is often neglected. All mammals play; in fact, *Play* is older than 
 culture for culture presupposes human society. The historian Johan Huizinga has asserted that human civilization added no 
 essential feature to the general idea of *Play*, animals of all kinds did not wait for man to teach them their playing. 
 Dinosaurs inhabited the planet millions of years prior to hominids; yet still, evidence suggested they played. 
-The instinctual essence of *Play*, although overlooked, is simply irrefutable due to its integrality within animal life.
+The instinctual essence of *Play*, although overlooked, is irrefutable due to its integrality within animal life.
 *Play* is not derived from a purely biological or a physical need; it is not a physiological phenomenon or a psychological 
 reflex, even in its purest of forms. Many psychologists and scientists hypothesized biological functions for *Play*; 
 some of which include:
 
 - *Play* is a result of a need for "relaxation."
 - *Play* is a discharge of abundant vital energy.
-- *Play* is a method by which young animals learn essental survival skills.
+- *Play* is a method by which young animals learn essential survival skills.
 - *Play* is a “wish-fulfillment” activity.
 - *Play* is an activity that satisfies the natural need for dominance and competition in a non-harmful environment.
 
@@ -49,7 +47,7 @@ hypotheses obsolete, or unify them as a coherent whole.  It’s challenging to d
 but it’s not difficult to differentiate it from what it’s not, *Play* is not the opposite of seriousness,
 it is not for children, *Play* is not rudimentary, senseless, artificial, pretentious or man-made.
 
-### *Homo Ludens*
+### Homo Ludens
 The 18th century and its age of Enlightenment ignited Anti-clericalism and the worship of reason. The substantial advances of the 16th and 17th 
 centuries in science and human thought blinded the many. We boldly or perhaps naively, decided to name our species [*Homo sapiens*](https://en.wikipedia.org/wiki/Names_for_the_human_species), Man the Rational.
 Thinkers refuted *Sapiens* as a name for our species, notwithstanding our ability to reason, irrationality is deeply rooted in human behaviour.

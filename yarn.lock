@@ -1950,7 +1950,7 @@ commander@2.17.x, commander@~2.17.1:
   resolved "https://registry.yarnpkg.com/commander/-/commander-2.17.1.tgz#bd77ab7de6de94205ceacc72f1716d29f20a77bf"
   integrity sha512-wPMUt6FnH2yzG95SA6mzjQOEKUU3aLaDEmzs1ti+1E9h+CsrZghRlqEM/EJ4KscsQVG8uNN4uVreUeT8+drlgg==
 
-commander@^2.12.1, commander@^2.18.0:
+commander@^2.12.1, commander@^2.16.0, commander@^2.18.0:
   version "2.19.0"
   resolved "https://registry.yarnpkg.com/commander/-/commander-2.19.0.tgz#f6198aa84e5b83c46054b94ddedbfed5ee9ff12a"
   integrity sha512-6tvAOO+D6OENvRAh524Dh9jcfKTYDQAqvqezbCW82xj5X0pSrcpxtvRKHLG0yBY6SD7PSDrJaj+0AiOcKVd1Xg==
@@ -4352,6 +4352,13 @@ jsprim@^1.2.2:
     json-schema "0.2.3"
     verror "1.10.0"
 
+katex@^0.10.0-beta:
+  version "0.10.0"
+  resolved "https://registry.yarnpkg.com/katex/-/katex-0.10.0.tgz#da562e5d0d5cc3aa602e27af8a9b8710bfbce765"
+  integrity sha512-/WRvx+L1eVBrLwX7QzKU1dQuaGnE7E8hDvx3VWfZh9HbMiCfsKWJNnYZ0S8ZMDAfAyDSofdyXIrH/hujF1fYXg==
+  dependencies:
+    commander "^2.16.0"
+
 katex@^0.6.0:
   version "0.6.0"
   resolved "https://registry.yarnpkg.com/katex/-/katex-0.6.0.tgz#12418e09121c05c92041b6b3b9fb6bab213cb6f3"
@@ -4707,6 +4714,20 @@ markdown-it@^8.4.0, markdown-it@^8.4.2:
     linkify-it "^2.0.0"
     mdurl "^1.0.1"
     uc.micro "^1.0.5"
+
+markdown-latex-loader@^0.0.0-alpha:
+  version "0.0.0-alpha"
+  resolved "https://registry.yarnpkg.com/markdown-latex-loader/-/markdown-latex-loader-0.0.0-alpha.tgz#add23c56089614fceeda08d75a2a8ff3f4d7e0b0"
+  integrity sha512-ItznqJyGsZEfDU0nQZhpSMFQbElAxYVhLjRoIzzb7wh9D2lXv9yAQHFl4tUTmsVyeD95WRVhdeYRl3Pj+i+URg==
+  dependencies:
+    katex "^0.10.0-beta"
+    loader-utils "^1.1.0"
+    marked "^0.4.0"
+
+marked@^0.4.0:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/marked/-/marked-0.4.0.tgz#9ad2c2a7a1791f10a852e0112f77b571dce10c66"
+  integrity sha512-tMsdNBgOsrUophCAFQl0XPe6Zqk/uy9gnue+jIIKhykO51hxyu6uNx7zBPy0+y/WKYVZZMspV9YeXLNdKk+iYw==
 
 match-at@^0.1.0:
   version "0.1.1"
