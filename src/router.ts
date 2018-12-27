@@ -10,6 +10,8 @@ import Wt from './views/games/wt.vue';
 import Mohra from './views/proj/mohra.vue';
 import Vis from './views/proj/vis.vue';
 //posts.imp
+import rustown from "./views/posts/rustown.vue";
+import hask from "./views/posts/hask.vue";
 import fvsimp from "./views/posts/fvsimp.vue";
 import Ref from './views/posts/Ref.vue';
 import Play from './views/posts/Play.vue';
@@ -23,6 +25,8 @@ export default new Router({
         { path: '/about',      name: 'about',           component: About },
         { path: '/skt',        name: 'sketchings',      component: Skt },
 //posts.path
+{ path: "/rustown",  name: "rustown", component: rustown },
+{ path: "/hask",  name: "hask", component: hask },
 { path: "/fvsimp",  name: "fvsimp", component: fvsimp },
         { path: '/play',       name: 'play',     component: Play  },
         { path: '/reformers',  name: 'reform',   component: Ref   },

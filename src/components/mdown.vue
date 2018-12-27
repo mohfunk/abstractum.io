@@ -1,5 +1,7 @@
 <script>
 //mdsrc
+import rustown from "@/assets/md/rustown.md";
+import hask from "@/assets/md/hask.md";
 import fvsimp from "@/assets/md/fvsimp.md";
 import sol from "@/assets/md/sol.md";
 import ref from '@/assets/md/ref.md';
@@ -14,6 +16,8 @@ export default {
     components: {
         ref,
 //mdcomp
+rustown,
+hask,
 fvsimp,
 sol,
         play,

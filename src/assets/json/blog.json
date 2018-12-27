@@ -3,6 +3,7 @@
     "id": "Blog",
     "i":
 [
+{ "id": "rustown", "date": "Dec 2018", "t": "Rust Memory Management", "to": "rustown" },
 { "id": "fvsimp", "date": "Nov 2018", "t": "Functional vs. Imperative Programming", "to": "fvsimp" },
     { "id": "2", "date": "Nov 2018", "t": "We Are But Reformers", "to": "/reformers" },
     { "id": "1", "date": "Jun 2017", "t": "Play", "to": "/play" }
