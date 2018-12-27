@@ -1,29 +1,22 @@
 <template>
-    <div class="home">
-        <div class="cnts">
-            <Container :cont="blog"/>
-            <skt/>
+    <div class="sketch">
+            <Container :cont="game" />
         </div>
-    </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
 import Container from '@/components/container.vue';
-import skt from '@/components/skt.vue';
 @Component({
     name: 'home',
     components: {
         Container,
-        skt
     },
 })
 export default class Home extends Vue {
     data() {
         return {
             game: require("@/assets/json/game.json"),
-            proj: require("@/assets/json/proj.json"),
-            blog: require("@/assets/json/blog.json"),
         }
     }
 }

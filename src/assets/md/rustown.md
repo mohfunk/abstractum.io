@@ -1,5 +1,6 @@
 # Rust's Memory Management System
-
+#### [draft, work in progress] 
+### Background
 Operating systems provide an abstraction of physical memory to each running
 program called **A Virtual Address Space,** for now, assume an address space contains 3 sections:   
 
@@ -10,7 +11,8 @@ To track function calls, store local variables, function arguments, and return
 values.
 * A **Heap**   
 For User-managed, dynamically (or runtime) alloacated memory.
-<br></br>
+
+
 The stack is structured to follow a strict *first in, last out* policy; thus,
 inserting, deleting, or accessing data on the stack doesnt require intensive
 computation. However, data stored on the stack must have a known size at compile
@@ -22,7 +24,6 @@ Since Heaps lack the determinism of stacks, They cost more to manage and there h
 * **Garbage Collection**  
 Garbage collected languages manage memory automatically which
 comes at a runtime performance cost.
-<br> </br>
 * **Manual Management**  
 Memory is managed exlicity by the programmer. Managing memory manually is an
 error-prone process that demands careful attention, common bugs include:
@@ -43,7 +44,7 @@ error-prone process that demands careful attention, common bugs include:
 Rust introduces a 3rd novel approch that is not as compuationally expensive as
 Garbage Collection, and not as error-prone as Dynamic allocation/deallocation: **Ownership.**   
 
-## Rules
+### Rules
 
 * A *Variable* carrying A Value is the **Owner** of that Value.
 * There can only be _**one**_ owner at a time.

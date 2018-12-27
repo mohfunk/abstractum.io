@@ -3,6 +3,8 @@ import Router from 'vue-router';
 import Home from './views/Home.vue';
 import About from './views/About.vue';
 import Skt from './views/Skt.vue';
+import proj from './views/Proj.vue';
+import games from './views/Game.vue';
 //games.imp
 import sol from "./views/games/sol.vue";
 import Wt from './views/games/wt.vue';
@@ -23,7 +25,9 @@ export default new Router({
     routes: [
         { path: '/',           name: 'home',            component: Home  },
         { path: '/about',      name: 'about',           component: About },
-        { path: '/skt',        name: 'sketchings',      component: Skt },
+        { path: '/sketch',        name: 'sketchings',      component: Skt },
+        { path: '/games',        name: 'sketchings',      component: games },
+        { path: '/projects',        name: 'sketchings',      component: proj },
 //posts.path
 { path: "/rustown",  name: "rustown", component: rustown },
 { path: "/hask",  name: "hask", component: hask },

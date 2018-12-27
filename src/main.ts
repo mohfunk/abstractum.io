@@ -3,7 +3,7 @@ import App from './App.vue';
 import router from './router';
 import store from './store';
 
-require('@/assets/css/fonts.css')
+require('@/assets/css/style.min.css')
 
 Vue.config.productionTip = false;
 

@@ -1,4 +1,3 @@
-### Programmer
 Though temporarily off school for reasons beyond my control, i'm still pursuing
 a Bachelor's degree at the University of Waterloo's Math Faculty.
 
@@ -7,7 +6,5 @@ with [Nasir Al-otabi.](https://twitter.com/NotNasser) to co-found **Monupon,** W
 
 
 ###### Contact
-###### moh@abstractum.io   
-###### 200 University Ave W,   
-###### N2L 3G1,   
-###### Waterloo, Ontario
+###### moh@abstractum.io
+-----
