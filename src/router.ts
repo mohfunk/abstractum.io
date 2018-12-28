@@ -9,6 +9,7 @@ import games from './views/Game.vue';
 import sol from "./views/games/sol.vue";
 import Wt from './views/games/wt.vue';
 //projs.imp
+import sinkingmen from "./views/proj/sinkingmen.vue";
 import Mohra from './views/proj/mohra.vue';
 import Vis from './views/proj/vis.vue';
 //posts.imp
@@ -38,6 +39,7 @@ export default new Router({
 { path: "/sol",  name: "sol", component: sol },
         { path: '/wt',         name: 'wt',       component: Wt    },
 //projs.path
+{ path: "/sinkingmen",  name: "sinkingmen", component: sinkingmen },
         { path: '/mohra',      name: 'mohra',    component: Mohra },
         { path: '/vis',        name: 'vis',      component: Vis   },
     ]

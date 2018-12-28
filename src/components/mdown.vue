@@ -1,5 +1,6 @@
 <script>
 //mdsrc
+import sinkingmen from "@/assets/md/sinkingmen.md";
 import rustown from "@/assets/md/rustown.md";
 import hask from "@/assets/md/hask.md";
 import fvsimp from "@/assets/md/fvsimp.md";
@@ -16,6 +17,7 @@ export default {
     components: {
         ref,
 //mdcomp
+sinkingmen,
 rustown,
 hask,
 fvsimp,
