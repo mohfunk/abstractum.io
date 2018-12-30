@@ -7,8 +7,8 @@ Copyright (c) 2018 Mohammed Alhaythm - OSI/MIT license (http://recodeproject/lic
 
 export default class JProgramme {
     private m: number = 10; // margin
-    private bds: number = 7;  // draw this.block createCanvas
-    private brs: number = 10; // real this.block createCanvas
+    private bds: number = 3.5;  // draw this.block createCanvas
+    private brs: number = 5; // real this.block createCanvas
     private bw: number = 9;  // width of a this.block
     private bh: number = 12; // height of a this.block
     private s!: number;
@@ -18,7 +18,7 @@ export default class JProgramme {
         this.s = this.bw - 1;
         this.p = p;
         p.pixelDensity(10);
-        p.createCanvas(1010, 1340);
+        p.createCanvas(800, 600);
         p.background(255);
         p.stroke(0, 0, 0);
         p.strokeWeight(1);
