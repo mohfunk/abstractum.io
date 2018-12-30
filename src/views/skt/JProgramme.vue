@@ -24,5 +24,6 @@ export default class JProgrammeView extends Vue {
 
 <style lang="sass" scoped>
 .skt
+    position: relative
     display: contents
 </style>
