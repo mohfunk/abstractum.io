@@ -82,11 +82,12 @@ deploy:
 	echo "{{file}} page attached"
 	echo "# New Post" > ./src/assets/md/projects/{{file}}.md
 
-@skt file id='100' title='title':
+@skt file src id='100' title='title':
 	cp ~/ws/.conf/fr/vue/sk.vue {{sktdir}}
 	mv {{sktdir}}sk.vue {{sktdir}}{{file}}.vue
 	echo "{{file}}.vue created"
 	sed -i '' "s/{{ "{{" }}name}}/{{file}}/g" {{sktdir}}{{file}}.vue
+	sed -i '' "s/{{ "{{" }}scode}}/{{src}}/g" {{sktdir}}{{file}}.vue
 	gsed -i '/^\/\/skt.imp$/ s:$:\nimport\ {{file}}\ from\ \"{{rsktdir}}{{file}}.vue\"\;:' {{rter}} 
 	gsed -i '/^        \/\/skt.path$/ s:$:\n\        {\ path\: \"\/sketch\/{{file}}\"\,\  name\: \"{{file}}\"\,\ component\:\ {{file}}\ }\,:' {{rter}} 
 	echo "{{file}} route created"

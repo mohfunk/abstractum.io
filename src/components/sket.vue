@@ -5,8 +5,6 @@
          @draw="draw"
          >
         </vue-p5>
-        <a :href="code">
-        <i class="fab fa-github"/></a>
     </div>
 </template>
 

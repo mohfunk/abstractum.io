@@ -1,4 +1,5 @@
-export default class spin {
+export default class sp {
+
     setup(p: p5) {
         p.pixelDensity(10);
         p.createCanvas(p.windowWidth, p.windowHeight, p.WEBGL);

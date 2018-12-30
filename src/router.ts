@@ -18,7 +18,8 @@ import fvsimp from "./views/posts/fvsimp.vue";
 import Ref from './views/posts/Ref.vue';
 import Play from './views/posts/Play.vue';
 //skt.imp
-import Spin from './views/skt/spin.vue';
+import JProgramme from "./views/skt/JProgramme.vue";
+import sp from "./views/skt/sp.vue";
 Vue.use(Router);
 
 export default new Router({
@@ -42,6 +43,7 @@ export default new Router({
         { path: '/projects/mohra',      name: 'mohra',    component: Mohra },
         { path: '/projects/vis',        name: 'vis',      component: Vis   },
         //skt.path
-        { path: "/sketch/Spin", name: "spin", component: Spin},
+        { path: "/sketch/JProgramme",  name: "JProgramme", component: JProgramme },
+        { path: "/sketch/sp",  name: "sp", component: sp },
     ]
 });
