@@ -1,27 +1,25 @@
 <script>
 //mdsrc
-import sinkingmen from "@/assets/md/sinkingmen.md";
-import rustown from "@/assets/md/rustown.md";
-import hask from "@/assets/md/hask.md";
-import fvsimp from "@/assets/md/fvsimp.md";
-import sol from "@/assets/md/sol.md";
-import ref from '@/assets/md/ref.md';
-import play from '@/assets/md/play.md';
-import about from '@/assets/md/about.md';
-import vis from '@/assets/md/vis.md';
-import mohra from '@/assets/md/mohra.md';
-import wt from '@/assets/md/wt.md';
+import sinkingmen from "@/assets/md/projects/sinkingmen.md";
+import rustown from "@/assets/md/blog/rustown.md";
+import fvsimp from "@/assets/md/blog/fvsimp.md";
+import sol from "@/assets/md/games/sol.md";
+import ref from '@/assets/md/blog/ref.md';
+import play from '@/assets/md/blog/play.md';
+import about from '@/assets/md/about/about.md';
+import vis from '@/assets/md/projects/vis.md';
+import mohra from '@/assets/md/projects/mohra.md';
+import wt from '@/assets/md/games/wt.md';
 export default {
     name: 'Post',
     props: ["src"],
     components: {
+        //mdcomp
         ref,
-//mdcomp
-sinkingmen,
-rustown,
-hask,
-fvsimp,
-sol,
+        sinkingmen,
+        rustown,
+        fvsimp,
+        sol,
         play,
         about,
         vis,

@@ -3,7 +3,6 @@
     "id": "Sket",
     "i":
 [
-    { "id": "2", "date": "Jun 2018", "t": "Pixel Faces", "to": "/skt/faces" },
-    { "id": "1", "date": "May 2018", "t": "Spinning Cube", "to": "/skt/cube" }
+    { "id": "1", "date": "May 2018", "t": "Spinning Cube", "to": "/sketch/spin" }
 ]
 }

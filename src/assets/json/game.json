@@ -3,7 +3,7 @@
     "id": "Games",
     "i":
 [
-{ "id": "sol", "date": "TBD 2021", "t": "Solitude", "to": "sol" },
-        { "id": "1", "date": "Aug 2019", "t": "Wild Thieves",       "to": "/wt" }
+        { "id": "2", "date": "TBD 2021", "t": "Solitude", "to": "/games/sol" },
+        { "id": "1", "date": "Aug 2019", "t": "Wild Thieves", "to": "/games/wt" }
     ]
 }

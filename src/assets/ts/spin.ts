@@ -1,10 +1,10 @@
-export default class Spin {
-    setup(p: p5){
+export default class spin {
+    setup(p: p5) {
         p.pixelDensity(10);
         p.createCanvas(p.windowWidth, p.windowHeight, p.WEBGL);
         p.background(0);
     }
-    draw(p: p5){
+    draw(p: p5) {
         p.background(0, 0);
         p.push();
         p.noStroke();
