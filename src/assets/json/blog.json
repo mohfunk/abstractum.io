@@ -3,7 +3,7 @@
     "id": "Blog",
     "i":
 [
-    { "id": "4", "date": "Dec 2018", "t": "Rust Memory Management", "to": "/blog/rustown" },
+    { "id": "6", "date": "Jan 2019", "t": "A Computer Science Degree From Home", "to": "/blog/csdegree" },
     { "id": "3", "date": "Nov 2018", "t": "Functional vs. Imperative Programming", "to": "/blog/fvsimp" },
     { "id": "2", "date": "Nov 2018", "t": "We Are But Reformers", "to": "/blog/reformers" },
     { "id": "1", "date": "Jun 2017", "t": "Play", "to": "/blog/play" }

@@ -1,7 +1,8 @@
 <script>
 //mdsrc
+import csdegree from "@/assets/md/blog/csdegree.md";
+import Money from "@/assets/md/projects/Money.md";
 import sinkingmen from "@/assets/md/projects/sinkingmen.md";
-import rustown from "@/assets/md/blog/rustown.md";
 import fvsimp from "@/assets/md/blog/fvsimp.md";
 import sol from "@/assets/md/games/sol.md";
 import ref from '@/assets/md/blog/ref.md';
@@ -15,9 +16,10 @@ export default {
     props: ["src"],
     components: {
         //mdcomp
+        csdegree,
+        Money,
         ref,
         sinkingmen,
-        rustown,
         fvsimp,
         sol,
         play,

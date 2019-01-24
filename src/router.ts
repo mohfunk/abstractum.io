@@ -9,11 +9,12 @@ import games from './views/Game.vue';
 import sol from "./views/games/sol.vue";
 import Wt from './views/games/wt.vue';
 //projs.imp
+import Money from "./views/proj/Money.vue";
 import sinkingmen from "./views/proj/sinkingmen.vue";
 import Mohra from './views/proj/mohra.vue';
 import Vis from './views/proj/vis.vue';
 //posts.imp
-import rustown from "./views/posts/rustown.vue";
+import csdegree from "./views/posts/csdegree.vue";
 import fvsimp from "./views/posts/fvsimp.vue";
 import Ref from './views/posts/Ref.vue';
 import Play from './views/posts/Play.vue';
@@ -31,7 +32,7 @@ export default new Router({
         { path: '/games',        name: 'sketchings',      component: games },
         { path: '/projects',        name: 'sketchings',      component: proj },
         //posts.path
-        { path: "/blog/rustown",  name: "rustown", component: rustown },
+        { path: "/blog/csdegree",  name: "csdegree", component: csdegree },
         { path: "/blog/fvsimp",  name: "fvsimp", component: fvsimp },
         { path: '/blog/play',       name: 'play',     component: Play  },
         { path: '/blog/reformers',  name: 'reform',   component: Ref   },
@@ -39,6 +40,7 @@ export default new Router({
         { path: "/games/sol",  name: "sol", component: sol },
         { path: '/games/wt',         name: 'wt',       component: Wt    },
         //projs.path
+        { path: "/projects/Money",  name: "Money", component: Money },
         { path: "/projects/sinkingmen",  name: "sinkingmen", component: sinkingmen },
         { path: '/projects/mohra',      name: 'mohra',    component: Mohra },
         { path: '/projects/vis',        name: 'vis',      component: Vis   },

@@ -21,18 +21,18 @@ export default{
     methods: {
         setup(p) {
             p.pixelDensity(10);
-            p.createCanvas(p.windowWidth, p.windowHeight, p.WEBGL);
+            p.createCanvas(p.windowWidth / 6 , p.windowHeight / 6, p.WEBGL);
             p.background(0);
         },
         draw(p) {
-            p.background(17,17,17, 0.2);
+            p.background(17,17,17, 1);
             p.push();
             p.noStroke();
             p.normalMaterial();
             p.rotateZ(p.frameCount * 0.001);
             p.rotateX(p.frameCount * 0.01);
             p.rotateY(p.frameCount * 0.01);
-            p.box(50, 15 + p.abs((10 * p.sin(p.frameCount * 0.02))));
+            p.box(50, 10 + p.abs((5 * p.sin(p.frameCount * 0.02))));
 
             p.pop();
         },
@@ -40,12 +40,4 @@ export default{
 }
 </script>
 <style lang="sass">
-.skt
-    -webkit-font-smoothing: antialiased
-    -moz-osx-font-smoothing: grayscale
-    position: fixed
-    top: 50%
-    left: 50%
-    transform: translate(-50%, -50%)
-    z-index: -10
 </style>

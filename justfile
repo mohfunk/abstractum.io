@@ -1,4 +1,4 @@
-cname 		= "www.abstractum.io"
+cname 		= "moh.page"
 rep 		= "abstractum.io"
 
 postdir 	= "./src/views/posts/"

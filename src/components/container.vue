@@ -1,6 +1,6 @@
 <template>
     <div class="cont" :id="cont.id">
-        <h3>{{cont.title}}</h3>
+        <h4>{{cont.title}}</h4>
         <div class="elem" v-for="item in cont.i" :key="item.id">
                 <h3>{{item.date}}</h3>
             <router-link :to="item.to">
