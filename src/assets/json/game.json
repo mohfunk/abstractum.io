@@ -1,9 +1,0 @@
-{
-    "title": "Games",
-    "id": "Games",
-    "i":
-[
-        { "id": "2", "date": "TBD 2021", "t": "Solitude", "to": "/games/sol" },
-        { "id": "1", "date": "Aug 2019", "t": "Wild Thieves", "to": "/games/wt" }
-    ]
-}

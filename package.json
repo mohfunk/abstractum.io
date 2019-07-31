@@ -1,45 +1,51 @@
 {
-    "name": "moh.page",
-    "version": "0.1.0",
-    "private": true,
-    "scripts": {
-        "serve": "vue-cli-service serve",
-        "build": "vue-cli-service build",
-        "lint": "vue-cli-service lint"
-    },
-    "dependencies": {
-        "babel-runtime": "^6.26.0",
-        "markdown-latex-loader": "^0.0.0-alpha",
-        "p5": "^0.7.2",
-        "vue": "^2.5.17",
-        "vue-class-component": "^6.0.0",
-        "vue-loader": "^15.4.2",
-        "vue-markdown": "^2.2.4",
-        "vue-markdown-it": "^0.9.3",
-        "vue-p5": "^0.7.1",
-        "vue-property-decorator": "^7.0.0",
-        "vue-router": "^3.0.1",
-        "vuex": "^3.0.1"
-    },
-    "devDependencies": {
-        "@vue/cli-plugin-babel": "^3.0.1",
-        "@vue/cli-plugin-typescript": "^3.0.1",
-        "@vue/cli-service": "^3.0.1",
-        "node-sass": "^4.9.0",
-        "sass-loader": "^7.0.1",
-        "typescript": "^3.0.0",
-        "vue-markdown-loader": "^2.4.1",
-        "vue-template-compiler": "^2.5.17",
-        "webpack": "^4.26.0"
-    },
-    "postcss": {
-        "plugins": {
-            "autoprefixer": {}
-        }
-    },
-    "browserslist": [
-        "> 1%",
-        "last 2 versions",
-        "not ie <= 8"
-    ]
+  "name": "moh.page",
+  "version": "1.0.0",
+  "description": "personal website",
+  "main": "index.js",
+  "repository": "https://github.com/mohfunk/moh.page.git",
+  "author": "Mohammed Alhaythm",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "dev": "parcel watch public/index.html",
+    "build": "parcel build public/index.html",
+    "start": "parcel serve public/index.html"
+  },
+  "dependencies": {
+    "lodash": "^4.17.15",
+    "lowdb": "^1.0.0",
+    "mailgo": "^0.6.9",
+    "next": "^9.0.2",
+    "p5": "^0.9.0",
+    "preact": "^8.4.2",
+    "preact-compat": "^3.19.0",
+    "react": "^16.8.6",
+    "react-addons-css-transition-group": "^15.6.2",
+    "react-anime": "^2.2.0",
+    "react-dom": "^16.8.6",
+    "react-feather": "^2.0.3",
+    "react-motion": "^0.5.2",
+    "react-router-dom": "^5.0.1",
+    "react-router-page-transition": "^3.1.0",
+    "sugar": "^2.0.6"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.1.7",
+    "@types/lodash": "^4.14.136",
+    "@types/mocha": "^5.2.7",
+    "@types/p5": "^0.7.3",
+    "@types/react": "^16.8.23",
+    "@types/react-addons-css-transition-group": "^15.0.5",
+    "@types/react-dom": "^16.8.5",
+    "@types/react-motion": "^0.0.29",
+    "@types/react-router-dom": "^4.3.4",
+    "@types/sugar": "^2.0.2",
+    "chai": "^4.2.0",
+    "marked": "^0.7.0",
+    "mocha": "^6.2.0",
+    "parcel-bundler": "^1.12.3",
+    "sass": "^1.22.7",
+    "typescript": "^3.5.3"
+  }
 }

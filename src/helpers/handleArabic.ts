@@ -1,0 +1,5 @@
+const HandleArabicText: string =
+    `<script>var tashkoler = (function () {function harakat(target = "p", color = "#0FF", size = "1em") {var style = document.createElement('style');style.type = 'text/css';style.innerHTML = '.tashkoler haraka { color: ' + color + '; font-size: ' + size + '; }';document.getElementsByTagName('head')[0].appendChild(style);var bind = document.querySelector(target);bind.className += " tashkoler";var join;var text = document.querySelector(target).innerHTML;text = text.replace(/ٌ|ّ|ٍ|ُ|َ|ِ|ً/gi, function wrapHaraka(x, y) {join = (text.charAt(y + 1) != " " && text.charAt(y - 1) != " ") ? "&zwj;" : "";return join + "<haraka>" + x + "</haraka>" + join;});bind.innerHTML = text;return {harakat: harakat};})();</script><script>tashkoler.harakat(".readable", "#0FF", "50px");</script>`;
+
+
+export default HandleArabicText

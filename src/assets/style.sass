@@ -1,0 +1,242 @@
+$ape: "Apercu", sans-serif 
+$ape_b: "Apercu_bold",sans-serif 
+$ape_m: "Apercu_med",sans-serif 
+$ape_m_i: "Apercu_med_i",sans-serif 
+$front_b: "Frontage_bold", sans-serif 
+$nitti_m: "Nitti_med", sans-serif
+$bah: "bahij", sans-serif
+$ar : "Mashq"
+$bg: #f6f4f2
+$bs: #d9d9d9
+$fg: #2e2c2c
+$fs: #14181b
+$gr: #6a6968
+$rd: #ff3944
+$bl: #0074D9
+$gn: #19bf62
+$yl: #ffad1f
+$or: #f45d22
+$pr: #794bc4
+
+body
+    font-family: $ape_b
+    background: $bg
+    color: $fg
+    width: 100vw
+    height: 100vh
+    display: flex
+    flex-direction: column
+    align-content: center
+    align-items: center
+    justify-content: center
+
+#root 
+    display: flex
+    flex-direction: column
+    width: 70vw
+    height: 50vh
+    align-content: center
+    align-items: flex-start
+
+
+.navContainer 
+    display: flex
+    flex-direction: column
+    align-items: baseline
+    align-content: flex-start
+
+
+#app 
+    display: flex
+    flex-direction: column
+
+
+h1 
+    font-family: Frontage
+    font-size: 24px
+    margin: 1em 0 1em 0
+
+
+.Post 
+    width: 40vw
+    display: flex
+    flex-direction: column
+    align-items: center
+    margin: 1em 0 10em 0
+    border-left-style: solid
+    border-right-style: solid
+    border-width: 0.01em
+    border-color: #cdcdcd
+    background: $bg
+    padding: 0 15vw 0 15vw
+    img
+        max-width: 40vw
+        height: auto
+    h1 
+        font-family: $ape_b
+        font-weight: bold
+        color: $rd
+        font-size: 32px
+        margin: 1em 0 0.1em 0
+    h2 
+        font-size: 28px
+        color: $bl
+        font-weight: bolder
+        text-align: left
+        margin: 2em 0 1em 0
+    h3 
+        font-size: 18px
+        color: $fg
+        font-weight: bolder
+        text-justify: left
+    h5
+        font-size: 14px
+        color: $gr
+        text-align: center
+        font-family: $ape_m
+        margin: 0 0 0 0
+        img 
+            width: 10px
+            height: auto
+            align-items: baseline
+            
+    h6 
+        font-family: $ape_m_i
+        font-size: 14px
+        color: $gr
+        margin: 0.5em 0 2em 0
+
+    hr 
+        display: block
+        height: 10px
+        width: 40vw
+        border-bottom: none
+        border-left: none
+        border-right: none
+        border-top: 1px solid #ddd
+        margin: 1em 0
+        padding: 0
+
+    p 
+        font-family: $ape_m
+        font-size: 20px
+        text-align: justify
+        line-height: 1.3em
+        margin: 1em 0 1em 0
+    p.ar
+        font-family: $ar
+        color: $fs
+        font-size: 22px
+        text-align: center
+        span.h
+            color: $gr
+            font-size: 1em
+    ul
+        text-align: left
+        margin: 0
+        padding: 0
+    li 
+        line-height: 1.5em
+        text-align: left
+        margin: 0
+        padding: 0
+    a 
+        text-decoration: none
+        color: $bl
+        transition: color 0.25s ease-in-out
+    
+    a:visited 
+        color: $bl
+    
+    a:hover 
+        color: $rd
+        
+
+h2 
+    font-size: 18px
+    margin: 0.5em 0 0.5em 0
+    text-align: center
+    
+
+.navItem 
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: space-around
+    align-content: center
+    height: 1.5em
+    text-align: center
+    .date 
+        font-family: $nitti_m
+        color: $gr
+        font-size: 18px
+        text-align: center
+        
+    
+    .title 
+        margin-left: 1em
+        font-size: 18px
+        text-align: center
+    
+
+    @media screen and (max-width: 500px) 
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        align-content: center
+        width: 90vw
+        margin: 0.5em 0 0.5em 0
+        .date 
+            font-size: 0.75em
+        
+        .title 
+            font-size: 0.75em
+
+h3 
+    text-align: center
+    a 
+        text-decoration: none
+        color: $bl
+        transition: color 0.25s ease-in-out
+    
+    a:visited 
+        color: $bl
+    
+    a:hover 
+        color: $yl
+
+canvas 
+    z-index: -100
+    left: 0vw
+    top: 0vh
+    position: fixed
+
+
+.NavIcons
+    display: flex
+    flex-direction: row
+    margin: 1em 0 1em 0
+    svg 
+        stroke-width: 2.5px
+    .svg
+        svg 
+            width: 1.3em
+            margin: 0 2em 0 0
+            height: auto
+            transition: color 0.25s ease-in-out
+    a
+        text-decoration: none 
+        color: $gr
+    a:hover
+        svg 
+            color: $yl
+    a:visited
+        color: $gr
+
+        
+.Foot
+    margin: 3em 0 5em 0
+    .svg
+        svg
+            path 
+                fill: none
