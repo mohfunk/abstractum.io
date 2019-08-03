@@ -21,3 +21,11 @@ yarn-error.log*
 *.sw*
 # Fonts
 /src/assets/fonts
+node_modules
+dist
+logs/*.log
+coverage
+.cache
+config/local.js
+test/e2e-test/videos
+test/e2e-test/screenshots
