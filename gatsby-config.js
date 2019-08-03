@@ -8,6 +8,7 @@ module.exports = {
     `gatsby-plugin-typescript`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-transition-link`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -59,6 +60,13 @@ module.exports = {
     {
       resolve: "gatsby-source-filesystem",
       options: {
+        name: "none",
+        path: `${__dirname}/src/content/`,
+      },
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
         name: "blog",
         path: `${__dirname}/src/content/blog/`,
       },
@@ -80,8 +88,8 @@ module.exports = {
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        name: "sketching",
-        path: `${__dirname}/src/content/sketching/`,
+        name: "sketchbook",
+        path: `${__dirname}/src/content/sketchbook/`,
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

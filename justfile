@@ -3,10 +3,10 @@ rep 		= "moh.page"
 
 
 deploy:
-    cp -rf ./dist ~/ws/.term/dist
-    cp ~/ws/.conf/fr/just/dep ~/ws/.term/dist/
-    mv ~/ws/.term/dist/dep ~/ws/.term/dist/justfile
-    echo {{cname}} >> ~/ws/.term/dist/CNAME
-    rm -rf ./dist
-    (cd ~/ws/.term/dist && just deploy {{rep}})
-    rm -rf ~/ws/.term/dist
+    cp -rf ./public ~/ws/.term/public
+    cp ~/ws/.conf/fr/just/dep ~/ws/.term/public/
+    mv ~/ws/.term/public/dep ~/ws/.term/public/justfile
+    echo {{cname}} >> ~/ws/.term/public/CNAME
+    rm -rf ./public
+    (cd ~/ws/.term/public && just deploy {{rep}})
+    rm -rf ~/ws/.term/public

@@ -30,7 +30,18 @@ exports.onCreateNode = ({
             // Generated value based on filepath with "blog" prefix. We
             // don't need a separating "/" before the value because
             // createFilePath returns a path with the leading "/".
-            value: `/${node.frontmatter.group}/${value.split('.')[1]}`,
+            value: `${
+                node.frontmatter.group != 'none'
+                ? '/'
+                : '' }${
+                node.frontmatter.group != 'none'
+                    ? node.frontmatter.group + '/'
+                    : ''
+                }${
+                value.split('.').length > 1
+                ? value.split('.')[1]
+                : value
+                }`,
         })
         createNodeField({
             // Name of the field you are adding

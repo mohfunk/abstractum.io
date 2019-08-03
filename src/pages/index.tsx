@@ -1,23 +1,35 @@
 import React, { useState } from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 import { NavMenu } from '../components/nav';
-import { GitHub, Twitter, Mail, Home as HomeIcon, Box, User, Package, Feather } from 'react-feather'
+import Footer from '../components/footer';
+
 import _ from 'lodash';
 import '../helpers/styles'
+import p5 from 'p5';
+import cube from '../helpers/cube';
+import Header from '../components/header';
+
+new p5(cube)
 //@ts-ignore
 const menuHeaders = {
   blog: "Blog Posts",
   game: "My Games",
-  work: "Stuff I wrote",
+  work: "Stuff I Wrote",
   sket: "My Programmer Sketchbook"
 }
+let prevClick = 'blog';
+export const pclick = (w: string) => prevClick = w;
 
 const prepare = (data: any, menu: string) =>
   _.reverse(
     _.sortBy(
       _.filter(data, ({ node: post }) =>
         post.frontmatter.group === menu),
-      ({ node: post }) => new Date(post.frontmatter.date)))
+      ({ node: post }) => new Date(
+        post.frontmatter.date.split('.')[0],
+        post.frontmatter.date.split('.')[1],
+        post.frontmatter.date.split('.')[2]
+      )))
 
 const BlogIndex = ({ data }) => {
   const { edges: posts } = data.allMdx
@@ -25,65 +37,22 @@ const BlogIndex = ({ data }) => {
     blog: prepare(posts, 'blog'),
     game: prepare(posts, 'games'),
     work: prepare(posts, 'work'),
-    sket: prepare(posts, 'sketching'),
+    sket: prepare(posts, 'sketchbook'),
   }
-  const [menu, setMenu] = useState({ head: 'Blog Posts', menu: menus['blog'] })
-  const click = (w: string) => {
+  const [menu, setMenu] = useState({ head: menuHeaders[prevClick], menu: menus[prevClick] })
+   const click = (w: string) => {
     setMenu({
+      //@ts-ignore
       head: menuHeaders[w],
+      //@ts-ignore
       menu: menus[w]
     })
   }
   return (
-    <div id={"root"}>
-      <div id={"app"}>
-        <div id="navheader">
-          <h1>
-            moh.page
-          </h1>
-          <div className={"NavIcons"}>
-            <Link to={'/'}>
-              <div className={'svg'} onClick={() => click('blog')}>
-                <HomeIcon />
-              </div>
-            </Link>
-            <Link to={'/'}>
-              <div className={'svg'} onClick={() => click('game')}>
-                <Box />
-              </div>
-            </Link>
-            <Link to={'/'}>
-              <div className={'svg'} onClick={() => click('work')}>
-                <Package />
-              </div>
-            </Link>
-            <Link to={'/'}>
-              <div className={'svg'} onClick={() => click('sket')}>
-                <Feather />
-              </div>
-            </Link>
-          </div>
-        </div>
-
-        <NavMenu head={menu.head} menu={menu.menu} />
-
-        <div className={"NavIcons Foot"} >
-          <div className={'svg'}>
-            <Link to={"/about"}>
-              <User id="user" />
-            </Link>
-            <a href={'https://twitter.com/mohfunk'}>
-              <Twitter id="twitter" />
-            </a>
-            <a href={'https://github.com/mohfunk'}>
-              <GitHub id='github' />
-            </a>
-            <a className="mailgo" data-address="moh" data-domain="monupon.com" href="">
-              <Mail id='mail' />
-            </a>
-          </div>
-        </div>
-      </div>
+    <div id={"app"}>
+      <Header click={click}/>
+      <NavMenu head={menu.head} menu={menu.menu} />
+      <Footer />
     </div>
   )
 }

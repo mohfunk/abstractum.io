@@ -1,8 +1,15 @@
-const sketch = (p) => {
+import p5 from '../../types/p5';
+
+const sketch = (p: p5) => {
     p.setup = () => {
         p.createCanvas(p.windowWidth, p.windowHeight, p.WEBGL);
+        p.frameRate(24);
         p.background(0);
+       
     };
+    p.windowResized = () =>
+        p.resizeCanvas(p.windowWidth, p.windowHeight)
+    
     p.draw = () => {
         p.background(0, 0);
         p.normalMaterial();
@@ -15,4 +22,4 @@ const sketch = (p) => {
         p.pop();
     };
 };
-module.exports = sketch;
+export default sketch;
