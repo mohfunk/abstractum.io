@@ -5,11 +5,7 @@ import Footer from '../components/footer';
 
 import _ from 'lodash';
 import '../helpers/styles'
-import p5 from 'p5';
-import cube from '../helpers/cube';
 import Header from '../components/header';
-
-new p5(cube)
 //@ts-ignore
 const menuHeaders = {
   blog: "Blog Posts",

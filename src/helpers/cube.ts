@@ -1,4 +1,4 @@
-import p5 from '../../types/p5';
+import p5 from 'p5';
 
 const sketch = (p: p5) => {
     p.setup = () => {
