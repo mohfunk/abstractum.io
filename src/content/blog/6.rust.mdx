@@ -10,33 +10,26 @@ group: "blog"
 
 
 ## Background
-
 Operating systems provide an abstraction of physical memory to each running
-program called **A Virtual Address Space,** for now, assume an address space contains 3 sections:   
+program, we call this illusion of physical memory **A Virtual Address Space,** for now, assume an address space contains 3 sections:   
 
-* An Instruction section  
-Where the program Instructions live.
-* A **Stack**   
-To track function calls, store local variables, function arguments, and return
+#### An **Instruction section** 
+where the program Instructions live.
+#### A **Stack**
+to track function calls, store local variables, function arguments, and return
 values.
-* A **Heap**   
-For User-managed, dynamically (or runtime) alloacated memory.
+#### A **Heap**
+for User-managed, dynamically (or runtime) alloacated memory.
 
 
 The stack is structured to follow a strict *first in, last out* policy; thus,
 inserting, deleting, or accessing data on the stack doesnt require intensive
 computation. However, data stored on the stack must have a known size at compile
-time that must remain fixed and they cant be used beyond their scope. To address these limitations, we store data of
-unknown and/or dynamic size on the heap.   
-
-
-Since Heaps lack the determinism of stacks, They cost more to manage and there has been two common approches for managing heap allocated memory:  
-* **Garbage Collection**  
-Garbage collected languages manage memory automatically which
-comes at a runtime performance cost.
+time that must remain fixed and they cant be used beyond their scope. To address these limitations, we store data of unknown and/or dynamic size on the heap. Since Heaps lack the determinism of stacks, They cost more to manage and there has been two common approches for managing heap allocated memory: 
+#### Garbage Collection
+Garbage collected languages manage memory automatically which comes at a runtime performance cost.
 * **Manual Management**  
-Memory is managed exlicity by the programmer. Managing memory manually is an
-error-prone process that demands careful attention, common bugs include:
+Memory is managed exlicity by the programmer. Managing memory manually is an error-prone process that demands careful attention, common bugs include:
 
     * **Segmentation Faults**  
     Performing an operation on Memory that is was not alloacted.

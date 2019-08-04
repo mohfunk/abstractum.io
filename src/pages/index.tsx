@@ -2,7 +2,8 @@ import React, { useState } from "react"
 import { graphql } from "gatsby"
 import { NavMenu } from '../components/nav';
 import Footer from '../components/footer';
-
+import cube from '../helpers/cube';
+import P5 from 'react-p5-wrapper';
 import _ from 'lodash';
 import '../helpers/styles'
 import Header from '../components/header';
@@ -46,7 +47,8 @@ const BlogIndex = ({ data }) => {
   }
   return (
     <div id={"app"}>
-      <Header click={click}/>
+      <Header click={click} />
+      <P5 sketch={cube} />
       <NavMenu head={menu.head} menu={menu.menu} />
       <Footer />
     </div>

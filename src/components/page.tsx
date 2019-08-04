@@ -7,7 +7,8 @@ import { pclick } from '../pages/index';
 
 import { TransitionState } from 'gatsby-plugin-transition-link'
 import { Spring } from 'react-spring/renderprops'
-
+import P5Wrapper from 'react-p5-wrapper';
+import cube from '../content/sketchbook/cube';
 
 const Anim = ({ data }) => (
   <TransitionState>
@@ -20,19 +21,25 @@ const Anim = ({ data }) => (
       >
         {props => <div style={props}>
           <div className={"Post"}>
-            <MDXRenderer>{data.mdx.body}</MDXRenderer>
-            {data.mdx.frontmatter.group === "sketchbook" ? console.log("sketc"): console.log("not sketch")}
+            {data.mdx.frontmatter.group === "sketchbook" ? (<P5Wrapper sketch={cube} />) : <></>}
+            <MDXRenderer>
+              {data.mdx.body}
+             
+            </MDXRenderer>
+            
           </div>
          
         </div>}
+        
       </Spring>
     )}
   </TransitionState>
 )
 const PageTemplate = ({ data }) => 
   <div id={"app"}>
-    <Header click={pclick}/>
-    <Anim data={data} />
+    <Header click={pclick} />
+    
+    <Anim data={data}/>
     <Footer />
   </div>
   export default PageTemplate
